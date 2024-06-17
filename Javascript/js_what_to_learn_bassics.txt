@@ -284,13 +284,21 @@ var obj={
     contact:7672812803
 };
 
-when 
-why
+obj.name likhne se hum log object ke andar name ko print kara rahe hai iska mtlb dot lagane se hum log andar chale jayenge.
 
 
-//prototypes
-//prototypal inheritance
-//asynchoronous
-// es6 climax
+//synchoronous & asynchoronous js
+synchoronous code mein code humesa line by line chalta hai 
+async code line by line nahi chalta saare async code ek saath shuru kar diya jata hai and jo pehle complete ho jaye uska answer de diya jata hai.
+
+//indepth
+jitna v synchoronous code hota hai woh main stack mein jata hai and jitna v async code hai woh side stack mein jata hai jab tak main stack khali nahi hota tab tak side stack pe async code chalta rehta hai aur async ka answer side stack pe aa v gaya ho par main stack khaali nahi hoga to v hum asyn ke code ko main stack mein nahi lagayenge.aur code ka answer tabhi milega jab woh main stack pe aake execute hoga.side stack pe proccessing hoti hai but woh execute nahi kar skta.
+
+
+//es6 climax
 //questions
 //misclenious-switch case, ternary operator, do-while, for-in, for-of
+//interview prep
+//this call apply bind
+//prototypes
+//prototypal inheritance
