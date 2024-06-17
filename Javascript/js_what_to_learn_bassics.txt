@@ -269,7 +269,21 @@ like Ek seher mein bahut saare prithvi naam ke ladke hai but jab hum kisi ek pri
 kai logo ka data = array
 ek bande ka bahut sara data = object
 
+for making object mainly we use curly braces {} their are differents ways also
+
+var obj={};
+var obj2=new Object();//O capital rehta hai 2nd way mein. 
+go check example 1 on Console.
+
 how 
+
+var obj={
+    name:"prithvi",
+    age:18,
+    email:"kuch@kuch.com",
+    contact:7672812803
+};
+
 when 
 why
 
