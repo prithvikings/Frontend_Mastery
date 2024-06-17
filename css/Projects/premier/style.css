@@ -1,0 +1,607 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+    overflow-y: auto;
+}
+
+main::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    width: 5px;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 35px;
+}
+
+
+
+nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    border-right: 2px solid black;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 21px;
+}
+
+nav h2:nth-last-child(2){
+    width: 27%;
+    /* background-color: rgb(46, 43, 43); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+nav h2:nth-last-child(1){
+    width: 12%;
+    /* background-color: rgb(46, 43, 43); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+nav i{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+nav h1{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 17%;
+    font-family: monument;
+    font-size: 35px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+nav h1::after{
+    content: "©️";
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 13%;
+    right: 8%;
+}
+
+nav h1::before{
+    content: "model managment";
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 8%;
+    right: 7%;
+}
+
+nav h3{
+    display: none;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw ;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #f8f8f8;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 2.5vw;
+}
+
+#over1 h2{
+    padding: 1vw;
+    border-radius: 50%;
+    /* background-color: black; */
+    padding: 1vw 1.4vw;
+    font-size: 1vw;
+    border: 2px solid #fff;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1vw 0;
+}
+
+#over2 h4{
+    font-family: "poppins";
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 3.4vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* display: flex; */
+}
+
+#container{
+    /* flex-shrink: 0; */
+    height: 100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 1.5vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    object-fit: cover;
+    object-position: center;
+    margin: 1vw;
+}
+#scroll img:nth-child(4){
+    object-position: center;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+    margin-right: 1vw;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* background-color: yellow; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 0.3vw 0.4vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+    
+}
+
+#page-2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page-2-part-1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1525943837837-af668e09139d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+
+#page-2-part-2{
+    height: 100%;
+    width: 46%;
+    
+}
+
+#page-2-part-2 img{
+    height: 70%;
+    width: 100%;
+    object-position: 30% 22%;
+    object-fit: cover;
+}
+
+#page-2-part-2-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15vw;
+}
+
+#page-2-part-2-text h2{
+    font-size: 1.1vw;
+    font-family: poppins;
+    margin-top: 1vw;
+}
+
+#page-2-part-2-text p{
+    font-family: poppins;
+    font-size: 0.9vw;
+    font-weight: 500;
+    text-align: left;
+}
+
+#page-3{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+.h1-p3{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: "monument";
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.elem:hover{
+    background-color: #ded7d7;
+}
+
+.elem img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50% ;
+    opacity: 0;
+    transition: all ease 0.5s;
+    left: 12%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.elem:nth-last-child(1) img{
+    left: 50%;
+}
+
+.elem:nth-last-child(3) img{
+    left: 50%;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
+}
+
+
+
+.elem h4{
+    font-size: 1.1vw;
+    font-family: poppins;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem .elem-part2{
+    width: 40%;
+}
+
+.elem .elem-part2 h1{
+    font-size: 2.6vw;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.elem .elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: poppins;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+
+#marquee{
+    /* height: 20vh; */
+    width: 100%;
+    padding: 0.5vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#marquee h1{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: monument;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    display: inline-block;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite; 
+}
+
+@keyframes animation {
+    from{
+        transform: translatex(0);
+    }to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 8vh;
+        margin-top: 25px;
+       padding: 0 5vw;
+    }
+    
+    nav h2{
+        display: none;
+    }
+    
+    nav h2>i{
+        display: none;
+    }
+    
+    nav h1{
+        justify-content: flex-start;
+        width: 40%;
+        font-size: 24px;
+    }
+    
+    nav h1::after{
+        display: none;
+    }
+    
+    nav h1::before{
+        display: none;
+    }
+    nav h3{
+        display: block;
+    }
+
+    #center{
+        height: 40%;
+        width: 100%;
+        /* background-color: red; */
+        padding: 3vw 4vw;
+        position: relative;
+    }
+    
+    #content{
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        position: relative;
+    }
+    
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #overlay{
+        height: fit-content;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        /* background-color: red; */
+        padding: 3vw;
+        color: #f8f8f8;
+    }
+    
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+    
+    #over1 h1{
+        font-family: monument;
+        font-size: 5.5vw;
+        font-weight: 100;
+    }
+    
+    #over1 h2{
+        padding: 2vw;
+        border-radius: 50%;
+        /* background-color: black; */
+        padding: 3vw 3.2vw;
+        font-size: 1vw;
+        border: 2px solid #fff;
+    }
+    
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #fff;
+        padding: 1vw 0;
+    }
+    
+    #over2 h4{
+        font-family: "poppins";
+        font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    #over2 img{
+        height: 5vw;
+    }
+
+    #scroll{
+        height: 20vh;
+        width: 100%;
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        /* display: flex; */
+    }
+    
+    #container{
+        /* flex-shrink: 0; */
+        height: 100%;
+        width: 210%;
+        /* background-color: blue; */
+        display: inline-block;
+        padding: 1.5vw;
+        animation-name: anime;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite;
+    }
+    
+    #scroll img{
+        /* display: none; */
+        height: 95%;
+        border-radius: 50%;
+        width: 15.5%;
+        object-fit: cover;
+        object-position: center;
+        margin: 1vw;
+    }
+    #scroll img:nth-child(4){
+        object-position: center;
+    }
+    
+    @keyframes anime {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+}
+

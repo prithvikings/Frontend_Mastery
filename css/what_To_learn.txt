@@ -1,0 +1,112 @@
+width and height
+
+
+--About-Color--
+color:text color
+background-color:background-color
+
+--units--
+px, %, vw, vh, em, rem
+max and min
+
+
+pixels :- 1px=1px on screen and it depends on different different device depend on depth per inch
+and make sure that dont use pixels many times cause ye jab ek baar isko koi size de dete hai tab computer screen
+minimize and maximize karne pe yeh vaise ke vaise hi rehta hai and it mainly depend on screen to screen to kai baar 
+developer ke pc pe koi cheez kuch aur jaisa dikhega and user mein kuch aur. Instead of this mostly we used now vw.
+
+
+% :- Ye bahut simple hai ye pure screen ya container ke hisab se percentage le leta hai and screen ke size ke chota bade
+karne ke karan se iska v size chota bada hota hai.like ye responsive behave karta hai.
+
+vw and vh :- ye log v percentage hi hota hai like agar humne 10vh likha iska mean hume 10% hight lena hai and agar 40vw bola to 40%width
+
+
+--Now You Might me thinking both are same but thats not true--
+
+%humesa parent se value leta hai
+whereas
+vh,vw screen se value leta hai.
+agar koi parent div ko 200 px height and 300 pixels width and unke children ko 100%widht and 100%height denge to woh parent div ka hi pura 
+area cover karega whereas in vw and vh if we give 100 vh and 100vw to woh pura screen cover karlega and issey bachne ke liye we use overflow hidden.
+
+
+em :- depend karta hai us element ke font size par aur ye agar parent ko agar dete hai to childeren par bhi apply hota hai.
+matalab kuch aisa:
+consider kariye ek element hai jiske paas 16 px font size hai to 1em ki value 16px hogi agar aur agar font size change kiya to uske response mein em
+ki value bhi badhegi.In nutshell we can say it is depend on font size of that element.
+yeh bhi pixels ke tarah fix hota hai
+
+
+rem :- ye html font size ke upar depend karta hai yeh root emprical units.
+
+
+Max-width,Max-Height :- Basically ye ek hook ke tarah hota hai ek baar agar yeh laga diya mtlb yeh ki ab issey jyada nahi hoga chahe aap kitna hi widht badha lo
+Min-widht,Min-height :- It is similar to Max-widht,Max-height.
+
+font-family
+font-size
+line-height
+text-align
+padding -box ke andar
+margin-- box ke bahar
+border --box ke border 
+display
+
+Block element will not allow any body to come left right
+inline element allow everybody to come left right if their is space and anybody want to come
+aur agar ek element inline and other block hai to v woh ek line mein nahi ho skta
+and agar hume inline element ki height aur widht badhani hogi to hume uski ussey inline block banana hoga
+
+position
+
+absolute :- mtlb ki kisi v element ko upar utha dena aur uska jagah khaali kar dena.
+issey kahi v move kar skte hai.
+
+ye layer wise upar neeche uthati hai.
+
+
+relative :- Basically ek aisa position hota jaha pe lets imagine ek child ek parent div ke andar hai and we want to move it
+to hum log ussey position absolute de denge aur parents ko position relative de denge jissey woh parents se bahar nahi jayega par 
+movement pura karta rahega parents div mein.
+
+fixed :- iska hum log use karte hai jab hume koi element ko ek dum fix karna hota hai tab iska use karte hai yeh pure page pe fix rehta 
+hai mostly it is used in nav bar.
+
+
+background
+
+background url se hum kisi bhi url se image dikha sakte hai but image pura sahi se nahi dikhta hai to we use background display cover tag se 
+pura div ka area cover kar dete hai issey hume mostly pura image dikhega and agar nahi dikhega to hum background position ka use karke ussey center top left right kar sakte hai.
+
+ek aur hota hai background cover jaise background contain Basically issey pura image ko div mein image late chahe uske liye hume repeat hi kyu na karna pade
+aur background image repeat off karne ke liye we use background repeat none.
+
+always recondmended to use background cover
+
+background linear gradient use for creating gradient color in background
+
+flex
+
+Iska use karte hai hum log childeren element ko ek line mein lane ke liye Basically hume yeh humesa parents pe lagana hota hai. 
+isme 2 axis hota hai.
+x axis(main) height wise and y axis(cross) widht wise
+xaxis mein work karne ke lliye justify content use hota hai.
+yaxis main work karne ke liye align items.
+pseudo_elements
+
+    ::before
+    ::after
+    ::first-line
+    ::first-letter
+    ::selection
+
+pseudo_classes
+
+    ::hover
+    ::active
+    ::focus
+    ::nth-child(n)
+
+animation
+media-queries

@@ -1,0 +1,31 @@
+*Resposive Website using HTML and CSS
+
+--> Understanding Units
+        -px-fixed
+        -%-depend on parents
+        -vw,vh- view port width according to device kaam karta hai
+        -vmax,vmin
+        -em, rem
+
+--> Layout of Website   
+        -absolute vs flex?
+
+--> flexbox
+        - Display flex
+        -aligning items in x and y axis
+        -flex-direction
+        -flex wrap
+
+--> CSS Media Queries
+        -min height, min widht
+        -min widht, max widht
+
+Key to keep in mind to make a website Resposive
+
+1. CSS flexbox
+2. CSS Units
+3. Resposive Typography
+4. Mobile First Approach
+5. Flexible Image and Media
+
+Practice! Practice! Practice! 

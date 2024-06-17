@@ -1,0 +1,6 @@
+we use this for making layout of website but we can make layout using flex also so why we are using this
+first we will learn the disadvantages of flex
+
+display flex is one dimenssional property we can either work on column or on row at a times
+whereas 
+display grid is 2d property

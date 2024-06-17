@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            height: 60px;
+            width: 160px;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid cyan;
+            color: cyan;
+            font-weight: 500;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.5s linear; /* Adjusted transition property */
+            overflow: hidden;
+        }
+        button::after {
+            content: "";
+            background-color: cyan;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s linear; /* Adjusted transition property */
+        }
+        button:hover::after {
+            transform: translate(-50%, -50%) scale(4); /* Fixed the scale value */
+        }
+        button:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button>Start Now</button>
+</body>
+</html>

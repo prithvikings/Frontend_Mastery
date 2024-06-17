@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            animation-name: box-anime;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode:forwards;
+            position: relative;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+         #box-2{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            animation-name: box-anime;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            position: relative;
+            top: 220px;
+    
+        } 
+        @keyframes box-anime {
+            from{
+                left: 0;
+                top: 0;
+            }
+            to{
+                left: 80%;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+</body>
+</html>

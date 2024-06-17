@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d {
+            width: 300px;
+            height: 150px;
+            background-color: crimson;
+            position: absolute;
+            animation-name: anime;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; /* optional, for continuous animation */
+        }
+        @keyframes anime {
+            0%{
+                left: 0;
+                top: 0;
+                rotate: 0deg;
+                background-color: chocolate;
+            }
+
+            50%{
+                left: 80%;
+                top: 0;
+                rotate: 0deg;
+                background-color: tomato;
+            }
+            100%{
+                left: 80%;
+                top: 50%;
+                rotate: 360deg;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d"></div>
+</body>
+</html>

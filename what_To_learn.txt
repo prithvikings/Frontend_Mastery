@@ -1,0 +1,22 @@
+files
+boiler plate
+attributes
+h1-h6,p,b,i,sup,sub
+ol ul li br hr a img 
+table video audio 
+forms inputs html5 
+semantics
+div id class 
+
+what is html?
+html=content
+
+why- because of content 
+
+where we need to write it- VS-CODE
+
+How we run it - we write it on vs code and it will run 
+
+file ka naam kuchbhi ho sakta hai but
+file ka extension humesa defined hota hai
+and for html we use .html 

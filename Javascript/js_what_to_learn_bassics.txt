@@ -1,0 +1,241 @@
+From js the language to objects it is core basics
+
+
+//Js the language
+Brendon eak develop this language within 20 days.
+and it is managed by ecmascript.
+Js has mainly two version es5 before and es6 after.
+
+
+//basics
+File connect karna and load karna script ko basic of code execution grammar and understanding of errors.
+
+
+//inbuilt features
+-Console
+-alert
+-prompt
+
+
+//variables constants
+They are a container variables and constants both are container.
+constants mein koi value daal di to woh hat nahi sakti 
+variables mein koi value daal di to woh hat jati hai.
+
+Har programming lang mein data se deal karna hota hai, wo alag alag prakar ke data ho skta hai, ab aisa data jisse humein deal karna hai wo save to karna padega na, to wo data save karne ke liye hume koi saving space banana chahiye jaha par data save ho jaye and yeh save karne ke liye unhe kuch naam bhi dena padega and isliye humein variables and constants banana padta hia taaki data save hojae and unka koi naam bhi ho taaki hum baad mein unhe acces kar paaye.
+
+
+//compilers and interpreter
+interpreter task jaldi solve karta hai but run slow karta hai
+whereas compilers task slow solve karta hai but run fast karta hai.
+
+Js langugae english words use karti hai and computers english nahi samjhte woh smajhte hai 0 and 1 jisko current flow and current bypass bhi keh skte ho and hum chahte hai hum english mein likhke computer se baat karle to hum ek translator lagayenge jo ki humara code english mein lega and usey 0 and 1 mein convert kar dega.
+
+<----compilers---->
+it convert code into machine-code and it is faster but slower conversion rate.it run faster.
+
+
+<-----interpreter------->
+it convert code into byte-code it is not hardware specfic it conversion rate is faster. but it run slowly cause byte code also need to convert into machine code.
+
+In Javascript we use interpreter. it is interpreted language.
+compilers language examples are java,c.
+
+Google develop-Jit compilers (Just in time compilers)-interpreter ki shuruati takat use karta hai and compiler ki running takat use karta hai.
+In chrome we jit compiler.
+
+
+
+//window
+there are many feature which are frequently used in js and they are not the part of js, because they are the part of the js the language but they are available in the browser and when you use them in js they are called from the browser.
+
+For checking which are the window tool just go to browser Console and type just window everything that you will see over their is part of window that means they are part of browser.
+
+window are the collection of all the tool which are available in browser to use in Javascript like alert,prompt,Console etc.
+
+One more time window ek bucket smajh lo jismein saari wo cheejein available hai jo browser deta hai Javascript mein karne ke liye kyunki wo saari cheezein js ka part nahi balki browser ka part hai which is available to use in js, we can also say that they are provided by browser to use in js, all these feature which are made available via browse are put inside window.
+
+it is also called window objects.
+
+
+//types
+Their are two types: 
+
+-1.Refrence Datatype-[],(),{}-Jitne v bracket mein hote hai woh refrence Datatype hote hai.
+
+-1.Primitive Datatype-all other datatype are in primitive datatype.
+
+<---Data Types--->
+"Prithvi"-String 
+12-Integer
+12.3-Float
+true-boolean
+'a'-character
+"sasfhdfh342348i"-Mixture of all is string  
+
+agar primitive mein koi ek variable ko dusre variable mein store kara ke change karte hai to main variable mein koi fadak nahi padta kyunki second variable main ka copy le leta hai.
+whereas in refrence mein hum jab second mein change karte hai then woh change main mein v change ho jata hai cause woh refrence hota hai.
+move to example for better understanding. second variable basically refrence leta hai from main variable.soo any change made in second will refer toward main variable.
+
+agar hume Refrence datatype mein v copy karna hai to we use spread method go check example for better understanding.
+
+
+//conditionals
+if,else,else if,ternary operator,switch
+99% if, else,else if use hota 
+1% ternary operator
+switch case is almost never used
+
+Jab bhi aapko program mein decsion lena ho,ki aage ki execution kaise ho to waha par if else else if use hota hai.
+
+if mein humesa hum wahi likh sakte hai jo true ya false ban sake.
+
+<---Truthy and Falsy value--->
+har value ko true ya false banaya ja skta hai, ye depend karta hai, ki wo value ka type kya hai, agar wo value, truthy hai to true banegi and Falsy hai to false banega.
+
+
+--Falsy- null, undefined NaN 0 "" '' document.all false inme se koi v cheez humne if mein likh di to woh false mein convert ho jayegi.
+
+--Truthy- baaki saare other value are true.
+
+check example for more information 
+
+
+//loops
+loops ka mtlb repeatation
+type of loop in js is:-
+-For -we use this 70% of time
+-while
+-do-while
+-for each -we use this 25% of time 
+-for in 
+-for of
+
+majorily we use For For each loop in development life cycle.
+
+
+<---For-Syntax--->
+for(start;end;change){
+
+}
+
+<---While-Syntax--->
+start;
+while(end){
+    change;
+}
+
+remember this structure it is important
+
+<---For-Each--->
+ek normal loop nahi hai for and while ki taarah jo number pe ya start end par chalta hai for each loop sirf array pe chalta hai.
+we will learn it when we complete array.
+
+
+//functions:-Js mein function normal programing language jaise nahi hai, iska matlab hai, yaha par js mein, function bananane ke liye type nahi batana nahi padta like in c++ we write int for function but here we dont need to write the type bas apko function keyword likhna padega and aap usey koi name deke bana skte ho.
+
+indepth- js mein fucntion first class function kaha jata hai, jiska matalab hai, ki js mein function ko value.varaible ki tarah treat kiya ja sakta hai.
+
+
+what is function
+koi aisa code jo apko baar baar use karna ho ya phir koi aisa code jisko turant na chalana ho par kabhi chanalana ho usey function keh sakte hai.
+
+-check function 1 example aur haa remember one thing function bananane ke baad usko chalana bhi parta hai;
+
+
+why we need
+to reuse code and to wrap the code which we want to run in future at some point of time.
+
+
+how to use
+function abcd(){
+
+}
+abcd();
+
+
+extra we should know
+-parameters and arguments
+function gkf(val){
+
+}
+gkf(13);
+
+Here val is parameter and the number in gkf brakcet is called arguments.
+real value jo bhejte hai woh argument hota hai and the function mein parameter hota hai.
+
+check example of this in function 2.
+
+<---Function-structure--->
+function abc(parameter){
+
+}
+
+
+As We know js is divided in two parts
+-Es5
+-Es6
+
+In Es5 functions are divided in 3 types.
+In Es6 functions are divided in 1 type but it is know in three ways.
+
+In Es5:-
+1.Function Statments
+2.Function Expressions
+3.Anonymous Function
+
+In Es6 Function:-
+1.Fat Arrow Function (can be written in 3 ways)
+(a).basic fat Arrow
+(b).fat arrow with one param
+(c).fat arrow with implicit return 
+
+
+<---Prep for interview--->
+function abcd(){
+    //function Statments
+}
+
+var abcd=function(){
+    //Function Expressions
+}
+Basically yaha pe function ko ek variable mein daal diya gaya hai.
+
+function(){
+    // Anonymous function
+}
+basically yaha pe agar function ko koi naam hi na de to ussey Anonymous function kehte hai.
+
+
+//Fat Arrow Function
+var a=()=>{
+    //Basic fat arrow 
+}
+
+var g= ab=>{
+    //fat arrow with one parameter jab single parameter hota hai to hum iska fat hata skte hai. and its not neccessary to remove it her/his 😁 choice.
+}
+g(12);
+
+//fat arrow with implicit return 
+var abcd=()=>"Prithvi";
+var ans=abcd();
+
+
+//return
+iska matalab hua, jaha par bhi return lagega uske aage jo bhi likhoge wo jaayega jaha par function call hua tha, return function ke andar lagta hai. 
+
+aisa function jo kuch bhi return nahi karta woh v undefined return karta hai. 
+
+check example function 3 for more details.
+
+
+//undefined, not defined, null
+//arrays
+//objects
+//prototypes
+//prototypal inheritance
+//asynchoronous
+// es6 climax
+//questions
+//misclenious-switch case, ternary operator, do-while, for-in, for-of
