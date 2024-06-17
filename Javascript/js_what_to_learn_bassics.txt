@@ -231,8 +231,49 @@ check example function 3 for more details.
 
 
 //undefined, not defined, null
+
+-undefined is a value
+undefined tab ji jaati hai jab variable ko koi value na mili ho iska matlab hai, ye ek garbage value ki tarah treat ki jaati hai.aap issey default value bhi keh skte ho. 
+
+-not defined is an errors
+koi particular element/identity ko use karna without its declaration gives an error and that error is not defined error.
+
+-null is also a value
+this is also a value which resolve like not found
+null is recieved when something is not found.
+
+
 //arrays
+what 
+array matlab jab bhii apko ek ya ek se jada value ek saath rakhni ho 
+
+how
+example of array in given array index html and script js go see it. 
+we can make it with mix of string Integer function anything.
+
+why
+a lot of time the data is int the shape of more than one member to contain all data all together we can save it in an array.
+
+for example agar seher ke saare prithvi naam ke aadmi ke naam ko store karna hai then we use array.
+
+
+//loop with array
+must go at example its important
+
+
 //objects
+what
+object ek tareeka hai jisse ki hum ek identity ki details ko ek saath rakh skte hai.
+like Ek seher mein bahut saare prithvi naam ke ladke hai but jab hum kisi ek prithvi naam ke ladke ka sara data store karte hai to ussey hum object kehte hai.
+
+kai logo ka data = array
+ek bande ka bahut sara data = object
+
+how 
+when 
+why
+
+
 //prototypes
 //prototypal inheritance
 //asynchoronous
