@@ -7,13 +7,24 @@ for(var i=0;i<arr.length;i++){
 console.log(sum);
 
 
+
+// Another Way of addition
+var arr=[12,2,3,4,5];
+var sum=0;
+arr.forEach(function(val){
+    sum+=val;
+});
+console.log(sum);
+
+
 var brr=[1,2,3,4,5];
-//add all members of array
+// count all members
 var count=0;
 for(var i=0;i<brr.length;i++){
     count++;
 }
 console.log(count);
+
 
 //how to loop an array
 var crr=[1,2,4,5];

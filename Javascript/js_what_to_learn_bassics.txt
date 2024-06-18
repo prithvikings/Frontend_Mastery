@@ -252,7 +252,7 @@ example of array in given array index html and script js go see it.
 we can make it with mix of string Integer function anything.
 
 why
-a lot of time the data is int the shape of more than one member to contain all data all together we can save it in an array.
+a lot of time the data is into the shape of more than one member to contain all data all together we can save it in an array.
 
 for example agar seher ke saare prithvi naam ke aadmi ke naam ko store karna hai then we use array.
 
@@ -294,11 +294,23 @@ async code line by line nahi chalta saare async code ek saath shuru kar diya jat
 //indepth
 jitna v synchoronous code hota hai woh main stack mein jata hai and jitna v async code hai woh side stack mein jata hai jab tak main stack khali nahi hota tab tak side stack pe async code chalta rehta hai aur async ka answer side stack pe aa v gaya ho par main stack khaali nahi hoga to v hum asyn ke code ko main stack mein nahi lagayenge.aur code ka answer tabhi milega jab woh main stack pe aake execute hoga.side stack pe proccessing hoti hai but woh execute nahi kar skta.
 
+//this call apply bind
+this keyword js mein one of the most suspenseful keyword 
+keyword ka matlab hota hai aisa word jiska koi matlab ho programming language mein 
+
+this ki value baar baar badal sakti hai alag alag condition mein, saari condition ko seekh jao to this ko smajh jaoge.
+
+#1.global- window
+#2.function- window
+#3.method- object
+#4.function inside method (es5)- window
+#5.function inside method (es6)- object
+#6.constructor function mein this ki value- new blank object
+#7.event listner mein this ki value- that element jisper event listner lag raha hai.
 
 //es6 climax
 //questions
 //misclenious-switch case, ternary operator, do-while, for-in, for-of
 //interview prep
-//this call apply bind
 //prototypes
 //prototypal inheritance
