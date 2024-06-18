@@ -25,6 +25,8 @@ console.log(f.slice(0,8));
 //it replace one string to other one 
 let str="Tushar Raj";
 console.log(str.replace("Tushar","Rahul"));
+//hume agar string mein koi bhi character ya value hum log normal change nahi kar sakte uske liye hume replace ka use karna hota hai.
+
 
 //it return character at given index
 let h="prithvi";
