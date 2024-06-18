@@ -23,10 +23,9 @@ console.log(f.slice(0,8));
 //slice mein ending value nahi bhi daalenge to fadak nahi parta
 
 //it replace one string to other one 
-let searchVal="Tushar Kumar";
-let NewVal="Prithvi Raj";
-console.log(searchVal.replace(searchVal,NewVal));
+let str="Tushar Raj";
+console.log(str.replace("Tushar","Rahul"));
 
-//it
+//it return character at given index
 let h="prithvi";
-console.log(h.charCodeAt(4));
+console.log(h.charAt(0));
