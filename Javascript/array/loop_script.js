@@ -39,3 +39,17 @@ drr.forEach(function(val){
     console.log(val);
 })
 //how to loop an array and do something witheach element.
+
+let heroes=["Spider Men", "ShaktiMan", "Batmen", "Raone", "AntMen"];
+//ye for loop se hua hai
+for(let i=0;i<=heroes.length;i++){
+    console.log(heroes[i]);
+}
+//ye for of loop se hua hai
+for(let hero of heroes){
+    console.log(hero);
+}
+//ye for of loop se hua hai
+for(let hero in heroes){
+    console.log(heroes[hero]);
+}
