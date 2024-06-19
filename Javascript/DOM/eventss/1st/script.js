@@ -8,3 +8,8 @@ b1.onmouseover=()=>{
     console.log("you are inside 1st button");
 }
 
+//adding event listener
+let pookie=document.querySelector(".btn-2");
+pookie.addEventListener("click",()=>{
+    console.log("hii hii bado badi");
+})

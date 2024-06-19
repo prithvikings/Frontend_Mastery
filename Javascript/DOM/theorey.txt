@@ -88,12 +88,22 @@ all event handler have access to the event object Properties and methods.
 
 node.event=(e)=>{
     //handle here
+    e.target
+    e.type
+    e.clientX
+    e.clientY
 }
 
 e.target,e.type,e.clientX,e.clientY
 
 
 //Event Listner
+
+abhi tak humne event ko handle karne ke 2 way dekhe ek inline event handle aur dusra tha js ke andar kisi node ko function ke help se handle kar rahe they handle.first ka draw back ye tha ki cause woh inline tha to because of that code of html bahut bulky ho jata hai isliye 2nd way use karte hai but 2nd ka drawback yeh hai ki hum yaha par ek baar ek hi function ko likh ke handle kar skte hai to issey v better tarika hota hai EventListener.
+
+Event Listner ko hum ek function keh skte hai jo ki sunta rehta hai ki kab event ayeag.
+
+ek event se multiple kaam create kar skte hai.
 
 node.addEventListener(event,callback)
 node.removeEventListener(event,callback)

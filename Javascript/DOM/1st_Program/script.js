@@ -10,16 +10,20 @@ let par=document.querySelector("p");
 par.remove();//it will remove any element from js
 
 //do it after learning event
-let eve=document.querySelector(".but-btn");
-eve.onclick=()=>{
-    main_bg();
-    eve.style.backgroundColor="red";
-}
-eve.ondblclick=()=>{
-    main.style.backgroundColor="bisque";
-    eve.style.backgroundColor="brown";
-}
-const main_bg=()=>{
-    let main=document.querySelector("#main");
-    main.style.backgroundColor="Black";
-}
+
+//toggle button
+let mn=document.querySelector("#main");
+let currentMode="light";
+let btn=document.querySelector(".but-btn");
+btn.addEventListener("click",()=>{
+    if(currentMode==="light"){
+        mn.classList.add("dark");
+        mn.classList.remove("light");
+        currentMode="dark"
+    }else{
+        mn.classList.add("light");
+        mn.classList.remove("dark");
+        currentMode="light"
+    }
+    console.log(currentMode);
+})
