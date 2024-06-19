@@ -64,3 +64,39 @@ let el=document.createElement("div");
 
 //delete element
 node.remove()//removers the node
+
+
+//Events
+The changes in the state of an object is know as Event.
+
+Event are fired to notify code of "interesting changes" that may affected code execution.
+
+#Mouse Event(click,double,click,etc);
+
+#keyBoard Event(keypress,keyUp,keyDown);
+
+#font Events(submit,etc);
+
+#print event & many more
+
+//jo sabse akhari mein event lagta hai woh hi humesa visible hota hai
+
+//Event object
+it is a special object that has details about the event
+
+all event handler have access to the event object Properties and methods.
+
+node.event=(e)=>{
+    //handle here
+}
+
+e.target,e.type,e.clientX,e.clientY
+
+
+//Event Listner
+
+node.addEventListener(event,callback)
+node.removeEventListener(event,callback)
+
+note:the call refrence should be same to remove
+
