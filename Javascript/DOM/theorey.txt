@@ -1,0 +1,66 @@
+What is Dom?
+when a web page is loaded the browser creates a document object model (DOM) of the page.
+
+dynamicaly manipulation or dynamic changes ke liye dom ka use karte hai.
+
+window->document->html->head&body->Head->meta,title,link->body->div->img,h1,p,div->script
+
+
+//selecting with id
+document.getElementByid("myid");
+
+//selecting with class
+document.getElementByClassName("myClassName");
+
+//selecting with Tag
+document.getElementByTagName("p");
+
+//query Selector
+In query selector we have to used #,. for as per our use like for id-#,class-.
+
+
+document.querySelector("myid/myclass/tag")
+// it will return first element
+
+document.querySelectorAll("myid/myclass/tag")
+// it will return a node list
+
+
+//Properties-:
+
+#tagName:-return tag for element nodes
+
+#innerText:-return the text content of the element and all its children sab element aur uske children ka inner text return kar deta hai.
+
+#innerHtml:-return the plain text or html content in the element isme element or uske children ka html and text dono rehta hai.
+
+#textContent:-return textual content even for hidden elements
+
+Dom-tree-parent-child-firstChild-lastChild-sibling
+
+//Attribute
+getAttribute(attr)//to get the atribute value
+
+setAttribute(attr,value)//to set the Attribute val th
+
+//style
+
+node.style
+
+//insert element :-it is two step procces first we have to :=
+
+#1. Process
+let el=document.createElement("div"); 
+
+#2. Process
+
+1.node.append(el)//add at the end of node (inside)
+
+2.node.prepend(el)//add at the start of node (inside);
+
+3.node.before(el)//add before the node (outside)
+
+4.node.after(el)//add after the node (outside)
+
+//delete element
+node.remove()//removers the node
