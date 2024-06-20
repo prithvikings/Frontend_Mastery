@@ -1,0 +1,29 @@
+Aisa js jo apke webpage par cheejo ko badal sake us js ko hum perform kar skte hai DOM ke saath
+
+#Dom = document object model
+
+Jo bhi hum website par dekhte hai woh sab kuch body tag ke andar banta hai, ab jo body mein banta hai wahi humein website par dikhta hai, dom actually hota hai thoda asaan shabdo mein html tag aur uska poora control js mein
+
+
+#Dom manipulation
+
+#Accessing elements:
+    document.querySelector()
+
+#Modifying elements:
+    innerHtml, textContent
+
+#manipulation of style and classes:
+    style
+    classlist
+
+#creating and deleting elements:
+    createElement()
+    appendchild()
+    removechild()
+
+#Event handling:
+    addEventListener()
+    removeEventListener()
+
+#Event object
