@@ -20,3 +20,8 @@ const createPassword=()=>{
     }
     passwordBox.value=Password;
 }
+const icon=document.querySelector(".ri-file-copy-line");
+icon.addEventListener("click",()=>{
+    Password.select();
+    document.execCommand('copy');
+})
