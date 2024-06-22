@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+}
+
+#container h3{
+    font-size: 20px;
+    font-weight: 550;
+    opacity: 0;
+}
+
+#downloadcapsule{
+    background-color: #dadada;
+    width: 300px;
+    height: 10px;
+    border-radius:100px ;
+}
+
+
+/* we can do this by adding css animation also */
+
+#progress{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).2s;
+    width: 0%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(25, 188, 25);
+    /* animation: textcolor1 2s linear infinite alternate; */
+}
+
+
+/* @keyframes textcolor1 {
+    0%{
+        width: 0%;
+    }
+    40%{
+        width:  100%;
+    }
+    100%{
+        width:  100%;
+    }
+} */
