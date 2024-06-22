@@ -1,0 +1,14 @@
+1. Create an Html Page With a button. When the button is clicked changet the text of a paragraph element.
+
+2. Create a page with two images and a button.when the button is clicked,swap the source attribute of the images.
+
+3.create a form with input field and a submit button. use javascript to validate the form and display an error message if the input is invalid.
+
+4.create an ul list. Allow user to add and remove list item dynamically using buttons.
+
+5.build a countdown time that start when a button is clicked and the display in real-time
+
+6.create a tabbed interface where clicking on tabs display different content section without page reload.
+
+7.display a progress bar that upadates in real-time showing the progress of download, or form submisssion
+

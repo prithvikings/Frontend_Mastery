@@ -1,0 +1,10 @@
+at the end of chapter we will come to summarization that in js jab hum js mein asynchoronous coding karte hai to hum async wait ka use karte hai cause they are better than promise chains and promis chains are better than callback hell
+
+we will start with callback hell
+
+First we will understand what is sync (synchoronous) in js:-
+
+synchoronous means the code runs in a particular sequence of instruction given in the program.Each instruction waits for the previous instruction to complete its execution.
+
+
+Asynchoronous means due to synchoronous programing sometimes imp instruction get blocked due to some previous instruction which causes a delay in the Ui. Asynchoronous code execution allows to execut next instruction immediately and doesnot block the flow.
