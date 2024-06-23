@@ -1,14 +1,138 @@
-Sync and Async Kya hota hai?
-Async js hai Kya?
-js is not Asyncchronous
-Async ki poori kahani
-single threading and multithreading
-call back
-promises
-then and catch
+#Sync and Async Kya hota hai?
+
+-sync matlab ek task ke baad dusra hoga, jab tak ek command complete naa ho dusra shuru nahi hoga.
+
+-task a- 5sec
+-task b- 2sec
+-task c- 15sec
+-task d- 1sec
+
+-async matlab saare kaam ek saath shuru kardo jiska answer pehle aa jaye uska jaawab dedena.
+
+
+#Kaise pata chalta hai ki hum sync code likh rahe ya async?
+
+Agar hum inme se kisi ka v use kar rahe hai to woh code hai Asyncchronous other wise it is synchronos.
+
+-settimeout
+-setinterval
+-promises
+-axios
+-xmhttprequest
+
+#Async js hai Kya?
+Kai baar apka final code depended hota hai kisi aur ke server par, is case mein humein nahi pata hota ki answer uske server se kab laut kar aayega, to hum kya nahi kar skte is writing sync code, isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi answer aaye humare answer ke respect mein chalne wala code chal jaye.
+
+async code ka main motive hota hai ki un cases mein jinmein hume pata nahi code ka answer kitni der mein ayega to jab bhi answer aa jaye uske answer ke respect mein koi particular code chala dena.
+
+check demo1 Example folder for more clarity.
+
+#callback function
+-calback function humesa async code mein answer aane ke baad chalta hai.
+
+#js is not Asyncchronous
+async ek dhokha hai.  
+
+
+maan lo 4 line ka code hai a,b,c,d jaha pe a-synchronos code hai,b-synchronos code hai,c-Asyncchronous code hai,d-Asyncchronous code hai.
+
+to a aur b dono main stack pe chalega aur c aur d side stack pe chalega aur phir jab main stack pe a aur b ka execution khtm ho jayega to phir c aur d se pucha jayega side stack mein ki kya tumhra process ho gaya and ek cheez dhyan rakhna ki hum side stack se tabhi hi puchenge jab main stack khaali ho jaye for example maan lo c bola nahi mujhe aur 5sec lagenge par d bola mera kaam ho gaya then we will move d to main stack for execution and after execution we will again c kya tumhra process ho gaya then maan lo usne kaha haa mera process ho gaya then we will move c also to main stack for execution.
+
+check demo2 Example folder for more clarity.
+
+and this process of from main to side stack is called event looping.
+
+jo bhi main stack par hota hai wo output karta hai and jo bhi side stack par hota hai wo behind the scenes processing kar skta hai aur jab uski processing complete ho use main stack mein laa kar chalaya jaa skta hai.
+
+mainstack=>execution,synchronos
+sidestack=>processing of Asyncchronous
+
+#single threading and multithreading
+-single threading=single threading matlab ek hi kaam chal raha hai.1 computation karne ki takat ko single thread kehte hai.
+
+-multithreading=ek se jyada computation karne ki takat ko multithreading kehte hai.
+
+-JavaScript is single-threaded. This means it has one call stack and one memory heap, which are responsible for executing code synchronously. Even though JavaScript supports asynchronous operations through concepts like callbacks and promises, these are managed by event loops 
+
+-JavaScript is often referred to as asynchronous, primarily due to its event-driven nature and support for non-blocking operations. While JavaScript itself is single-threaded, meaning it executes one piece of code at a time in a single call stack, it leverages asynchronous programming patterns extensively.
+
+#call back
+
+-In JavaScript, a callback is a function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of routine or action. Callbacks are fundamental to asynchronous programming in JavaScript, allowing you to define what should happen after a particular task finishes executing.
+
+#promises
+-imagine you ask your mom for a cookie, but she's busy and tells you, "I'll get it for you later." Instead of waiting and doing nothing, you can keep playing with your toys. When mom finally gets the cookie, she gives it to you.
+
+In JavaScript, promises work a bit like that. When you ask JavaScript to do something that might take time, like loading a picture from the internet, it gives you a promise. This promise is like mom's promise to get you the cookie later. While JavaScript is busy fetching the picture, your code can keep doing other things (like playing with toys). When the picture is ready, JavaScript keeps its promise and gives you the picture.
+
+So, promises in JavaScript help you handle tasks that take time, like fetching data or loading images, without stopping your code from doing other stuff. They make sure you get what you asked for when it's ready, just like mom with your cookie!
+
+#then and catch
+
+-Then: After mom promises to get you a cookie later, you might say, "When you give me the cookie, I'll eat it." In JavaScript, when you get a promise for something, you use .then() to say, "When the promise is fulfilled (when I get what I asked for), do this next thing." It's like having a plan for what to do when you finally get your cookie.
+
+-Catch: Sometimes things might not go as planned. For example, mom might say she can't find any cookies right now. In JavaScript, if there's a problem fulfilling the promise, you use .catch() to handle errors. It's like having a backup plan if something goes wrong.
+
 try and catch
-Async await
+-Imagine you're playing a game where you try to catch a ball your friend throws to you. Here's how it works:
+
+Try: You try to catch the ball your friend throws. You think, "I'll try to catch it!"
+
+In JavaScript, when you're not sure if something might cause an error (like fetching data from the internet), you wrap that code inside a try block.
+
+-Catch: If you miss catching the ball (because maybe it was too fast or you weren't ready), your friend says, "It's okay, try again next time."
+
+In JavaScript, when something inside the try block causes an error, JavaScript "catches" that error and runs the code inside the catch block. This helps you handle errors gracefully without crashing your whole program.
+
+-So, try is like attempting to catch something without knowing if you'll succeed, and catch is what you do if you miss and need to handle the situation. In JavaScript, try and catch are used together to manage and respond to potential errors in your code.
+
+#Async await
+
+-Imagine you're waiting for a friend to finish drawing a picture for you. Normally, you'd wait patiently until they're done before doing anything else. But with async/await, you can do other things while waiting, and when the picture is ready, you can look at it.
+
+-Async: This is like telling your friend, "I'll wait for you to finish drawing, but I won't just sit here doing nothing. I'll do something else until you're done."
+
+In JavaScript, you mark a function as async when you want it to be able to use await. This allows the function to run asynchronously (not blocking other code) and use await inside it to wait for promises to resolve.
+
+-Await: This is like saying, "I'll wait until you finish drawing the picture before I do anything with it."
+
+In JavaScript, await is used inside an async function to wait for a promise to resolve. It pauses the execution of the async function until the promise is settled (either fulfilled with a value or rejected with an error).
+
+-In summary:
+
+async: It makes a function able to use await inside it and run asynchronously.
+await: It pauses the execution of an async function until a promise is resolved, letting you handle asynchronous code in a more synchronous-like way.
+
+-Async/await is a powerful feature in JavaScript that makes it easier to write and understand asynchronous code, especially when dealing with promises. It helps manage complex workflows and improves readability by avoiding nested callbacks or chaining promises.
 5 use cases ek dum real world wale
 [concept aside]
-concureency and parellelism
-throttling
+
+#concureency and parellelism
+-Concurrency in JavaScript refers to the ability to handle multiple tasks or processes simultaneously, leveraging its event-driven, non-blocking nature. While JavaScript itself is single-threaded (meaning it has one main thread of execution), it supports concurrency through mechanisms like asynchronous operations, event loops, and concurrency models provided by its runtime environments (like browsers or Node.js).
+
+-In JavaScript, achieving true parallelism, where tasks are executed simultaneously using multiple processors or cores, is somewhat limited due to its single-threaded nature. However, JavaScript can leverage parallelism in certain scenarios through specific mechanisms:
+1.Web Workers
+2.Node.js Worker Threads
+3.Parallelism in Native Add-ons
+
+
+#throttling
+throttling" in JavaScript, that's a concept used to control the rate at which a function or an operation is executed, typically to limit the number of times it can be called over a period of time.
+
+it is often used in some scenarios such as:-
+
+1.Event Handling: To prevent a function from being called more than once within a certain   timeframe, especially in response to rapid user interactions like scrolling or resizing.
+2.API Requests: To limit the frequency of API calls made to a server, ensuring that the server is not overloaded and that API rate limits are respected.
+
+
+<--Insab se request bhejte hai-->
+fetch
+axios
+promises
+settimeout
+setinterval
+
+<--Insab se answer lete hai-->
+then Catch
+callback
+async await
