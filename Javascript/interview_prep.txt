@@ -1,0 +1,19 @@
+#undefined vs null
+-firstly both are a value
+-undefined type is undefined and null type is object null is basically humne kisi ko dhunda par woh mila nahi.
+undefined basically humne koi variable banaya par ussey define nahi kiya then it will return undefined.
+
+
+#event deligation
+
+#closure method in js
+it is method in which one fucntion return other function aur return hone wale function ne parent ke koi variable ko acces kar liya 
+//example-
+function abcd(){
+    var a=10;
+    return function innerfunc(){
+        console.log(a);
+    }
+}
+
+#prototypes inheritance

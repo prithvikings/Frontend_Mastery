@@ -2,8 +2,58 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: poppins;
 }
 html, body {
     height: 100%;
     width: 100%;
 }
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+.container{
+    padding: 11vw 26vw;
+}
+
+input{
+    width: 100%;
+    padding: 12px 22px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    outline-color: royalblue;
+    border: 1px solid #daadda;
+}
+.people{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 10px;
+}
+.person{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.img{
+    width: 7vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 2px solid #daadda;
+    overflow: hidden;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

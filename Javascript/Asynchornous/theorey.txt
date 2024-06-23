@@ -1,0 +1,14 @@
+Sync and Async Kya hota hai?
+Async js hai Kya?
+js is not Asyncchronous
+Async ki poori kahani
+single threading and multithreading
+call back
+promises
+then and catch
+try and catch
+Async await
+5 use cases ek dum real world wale
+[concept aside]
+concureency and parellelism
+throttling

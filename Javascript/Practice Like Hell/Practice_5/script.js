@@ -14,5 +14,4 @@ stop.addEventListener("click",()=>{
     clearInterval(interval);
 })
 
-
 //setinterval ek function hai jo 2 cheez accept karta hai callback and timer callback ka mtlb function hota hai. timer ko hum milisecond mein likhte hai.

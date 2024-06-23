@@ -287,12 +287,16 @@ check example function 3 for more details.
 //undefined, not defined, null
 
 -undefined is a value
+undefined type is undefined
+undefined basically humne koi variable banaya aur usey koi value nahi diya to ussey undefined hi milega.
 undefined tab ji jaati hai jab variable ko koi value na mili ho iska matlab hai, ye ek garbage value ki tarah treat ki jaati hai.aap issey default value bhi keh skte ho. 
 
 -not defined is an errors
 koi particular element/identity ko use karna without its declaration gives an error and that error is not defined error.
 
 -null is also a value
+null type is object
+kisiko dhunda par nahi mila
 this is also a value which resolve like not found
 null is recieved when something is not found.
 
