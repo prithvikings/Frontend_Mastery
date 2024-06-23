@@ -58,6 +58,8 @@ sidestack=>processing of Asyncchronous
 
 #call back
 
+callback humesa ek function hota hai ye sirf tab chalta hai jab async code ka comletion ho jaye.
+
 -In JavaScript, a callback is a function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of routine or action. Callbacks are fundamental to asynchronous programming in JavaScript, allowing you to define what should happen after a particular task finishes executing.
 
 #promises
@@ -66,6 +68,8 @@ sidestack=>processing of Asyncchronous
 In JavaScript, promises work a bit like that. When you ask JavaScript to do something that might take time, like loading a picture from the internet, it gives you a promise. This promise is like mom's promise to get you the cookie later. While JavaScript is busy fetching the picture, your code can keep doing other things (like playing with toys). When the picture is ready, JavaScript keeps its promise and gives you the picture.
 
 So, promises in JavaScript help you handle tasks that take time, like fetching data or loading images, without stopping your code from doing other stuff. They make sure you get what you asked for when it's ready, just like mom with your cookie!
+
+go and watch demo3 example.
 
 #then and catch
 
@@ -88,6 +92,10 @@ In JavaScript, when something inside the try block causes an error, JavaScript "
 
 #Async await
 
+-koi bhi esa function jisme aap async code likhoge kyoki async code hai to aap promises ka istemal kar sakte hai, jab uska answer aayega aapko then lagana padega us then ko lagane se bachne ke liye aap async await ka istemal kar sakte hai.
+
+go watch demo4 for more clarity
+
 -Imagine you're waiting for a friend to finish drawing a picture for you. Normally, you'd wait patiently until they're done before doing anything else. But with async/await, you can do other things while waiting, and when the picture is ready, you can look at it.
 
 -Async: This is like telling your friend, "I'll wait for you to finish drawing, but I won't just sit here doing nothing. I'll do something else until you're done."
@@ -108,13 +116,20 @@ await: It pauses the execution of an async function until a promise is resolved,
 [concept aside]
 
 #concureency and parellelism
+
 -Concurrency in JavaScript refers to the ability to handle multiple tasks or processes simultaneously, leveraging its event-driven, non-blocking nature. While JavaScript itself is single-threaded (meaning it has one main thread of execution), it supports concurrency through mechanisms like asynchronous operations, event loops, and concurrency models provided by its runtime environments (like browsers or Node.js).
+
+-concureency basicaly js mein sync code and async code ek saath process ho raha tha ye hai concureency
+
+
+-Parallelism
 
 -In JavaScript, achieving true parallelism, where tasks are executed simultaneously using multiple processors or cores, is somewhat limited due to its single-threaded nature. However, JavaScript can leverage parallelism in certain scenarios through specific mechanisms:
 1.Web Workers
 2.Node.js Worker Threads
 3.Parallelism in Native Add-ons
 
+-Focus jaada karta hai different processors and unke cores par kaam chalane par
 
 #throttling
 throttling" in JavaScript, that's a concept used to control the rate at which a function or an operation is executed, typically to limit the number of times it can be called over a period of time.
@@ -136,3 +151,9 @@ setinterval
 then Catch
 callback
 async await
+
+#5 use cases in real world of async code
+    -node mein jab db
+    -fetch
+    -setinterval
+    -settimeout
