@@ -9,3 +9,12 @@ synchoronous means the code runs in a particular sequence of instruction given i
 
 
 Asynchoronous means due to synchoronous programing sometimes imp instruction get blocked due to some previous instruction which causes a delay in the Ui. Asynchoronous code execution allows to execut next instruction immediately and doesnot block the flow.
+
+#call back
+
+-A function passed as an argument to another function.
+
+#callback hell
+-Nested callback stacked below one another forming a pyramid structure (pyramid of Doom)
+
+-This style of programing becomes diffcult to understand & manage.

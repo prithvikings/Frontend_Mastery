@@ -2,6 +2,8 @@
 
 -sync matlab ek task ke baad dusra hoga, jab tak ek command complete naa ho dusra shuru nahi hoga.
 
+synchoronous means the code runs in a particular sequence of instruction given in the program.Each instruction waits for the previous instruction to complete its execution.
+
 -task a- 5sec
 -task b- 2sec
 -task c- 15sec
@@ -24,6 +26,8 @@ Agar hum inme se kisi ka v use kar rahe hai to woh code hai Asyncchronous other 
 Kai baar apka final code depended hota hai kisi aur ke server par, is case mein humein nahi pata hota ki answer uske server se kab laut kar aayega, to hum kya nahi kar skte is writing sync code, isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi answer aaye humare answer ke respect mein chalne wala code chal jaye.
 
 async code ka main motive hota hai ki un cases mein jinmein hume pata nahi code ka answer kitni der mein ayega to jab bhi answer aa jaye uske answer ke respect mein koi particular code chala dena.
+
+Asynchoronous means due to synchoronous programing sometimes imp instruction get blocked due to some previous instruction which causes a delay in the Ui. Asynchoronous code execution allows to execut next instruction immediately and doesnot block the flow.
 
 check demo1 Example folder for more clarity.
 
@@ -58,11 +62,29 @@ sidestack=>processing of Asyncchronous
 
 #call back
 
+-A function passed as an argument to another function
+
 callback humesa ek function hota hai ye sirf tab chalta hai jab async code ka comletion ho jaye.
 
 -In JavaScript, a callback is a function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of routine or action. Callbacks are fundamental to asynchronous programming in JavaScript, allowing you to define what should happen after a particular task finishes executing.
 
+#callback hell
+-Nested callback stacked below one another forming a pyramid structure (pyramid of Doom)
+
+-This style of programing becomes diffcult to understand & manage.
+
 #promises
+
+-Promises is for eventual completion of task. it is an object in js. it is solution of callback hell.
+
+*it has 3 states:-
+
+-Pending:The result is undefined
+
+-fulfilled:The result is a value (fulfilled). resolve(result)
+
+-rejected:The result is an error object. reject(error)
+
 -imagine you ask your mom for a cookie, but she's busy and tells you, "I'll get it for you later." Instead of waiting and doing nothing, you can keep playing with your toys. When mom finally gets the cookie, she gives it to you.
 
 In JavaScript, promises work a bit like that. When you ask JavaScript to do something that might take time, like loading a picture from the internet, it gives you a promise. This promise is like mom's promise to get you the cookie later. While JavaScript is busy fetching the picture, your code can keep doing other things (like playing with toys). When the picture is ready, JavaScript keeps its promise and gives you the picture.
@@ -112,8 +134,9 @@ async: It makes a function able to use await inside it and run asynchronously.
 await: It pauses the execution of an async function until a promise is resolved, letting you handle asynchronous code in a more synchronous-like way.
 
 -Async/await is a powerful feature in JavaScript that makes it easier to write and understand asynchronous code, especially when dealing with promises. It helps manage complex workflows and improves readability by avoiding nested callbacks or chaining promises.
-5 use cases ek dum real world wale
-[concept aside]
+
+-asynchoronous coding karte hai to hum async wait ka use karte hai cause they are better than promise chains and promis chains are better than callback hell
+
 
 #concureency and parellelism
 
@@ -152,7 +175,7 @@ then Catch
 callback
 async await
 
-#5 use cases in real world of async code
+5 use cases ek dum real world wale
     -node mein jab db
     -fetch
     -setinterval
