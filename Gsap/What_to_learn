@@ -1,1 +1,38 @@
-GSAP-Green Stock Animation Platform
+Gsap
+-GSAP
+-What is Animation
+-GSAP Introduction
+-GSAP animatio basics
+-gsap.to() and gsap.from()
+-Some other features
+-GSAP Timelines and how to control it
+-GSAP and Scroll Trigger
+-Pinning in ScrollTrigger
+-Some other Plugins
+-Project with GSAP
+It is a Animation Library
+
+
+
+GSAP-Green Sock Animation Platform
+
+-In GSAP We can use css properties.
+
+#gsap.to aur gsap.from mein difference kya hai?
+
+maan lo humne ek box banaya, aur hume jab us box ko initial to final le jana rahe to uss tarah ke Animation mein hum log .to use karte hai.
+
+and same wahi gsap.from mein basically woh final to initial jata hai iska use karte hai jab maan lo humne koi site banaya jaha pe element ek jagah pe lana ho uske main jagah pe to iska use karte hai.
+its like ki jo bhi property hum ussey gsap code mein denge woh usko chorke apne original css ke property pe aa jayega
+
+
+//Stagger 
+Basically stagger is use when we want to move one kind of many element at a time ek ek karke 
+like ek naam ke bahut log hai jaise 3 h1 hai teeno ko ek ek karke lana ho screen pe then we use this thing. stagger ki value minus mein agar de denge to woh ulta chlega pehle 3 ayega phir 2nd then 1st other wise in positive number it goes from 1 to 3
+
+//repeat 
+ye basically kisi bhi animation ko baar baar repeat karne ke liye hota hai agar 1 value repeat mein hai to animation 2 baar chlega kyunki ek baar to woh default chal hi raha tha and ek baar phir woh chlega for repeat agar 2 hua repeat ka property to woh 3 baar chlega
+and agar infinite baar repeat karna hai then set the value to -1.
+
+//yoyo
+isme value true ya false dalna hota hai agar true hoga to woh ek baar jayega and phir aa jayega wapas
