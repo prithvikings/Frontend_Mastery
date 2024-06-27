@@ -36,3 +36,17 @@ and agar infinite baar repeat karna hai then set the value to -1.
 
 //yoyo
 isme value true ya false dalna hota hai agar true hoga to woh ek baar jayega and phir aa jayega wapas
+
+//Timelines
+
+timeline se cheezein synchoronous way mein ho jata hai line by line chalta hai
+
+you might still be confused but jaise woh normal code likhne mein hume agar line by line usko chalane ke liye hume har element ke liye delay calculate karna padta tha taaki cheezein line by line chale but yaha pe dekho yeh already line by line hi hai
+
+//but for further clarity on timeline go watch basic_5 folder
+
+
+//ScrollTrigger
+Basically Scroll ke base pe animation chalna mano jaise hi hum kisi page pe scroll kiya tab ussi time humara animation Trigger hoke run ho.
+it is Plugin of gsap we also have to connect its cdn its 2nd last.
+isko gsap ke cdn ke neeche and js ke script se upar rakhna hota hai
