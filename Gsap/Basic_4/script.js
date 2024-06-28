@@ -25,12 +25,15 @@ tl.to("#box1",{
     x:1200,
     rotate:360,
     duration:1.5,
+    backgroundColor:"blue",
     // delay:1
 })
 tl.to("#box2",{
     x:1200,
-    backgroundColor:"Yellow",
+    rotate:360,
     duration:1.5,
+    backgroundColor:"Gold",
+    borderRadius:"50%"
     // delay:2.5
 })
 tl.to("#box3",{

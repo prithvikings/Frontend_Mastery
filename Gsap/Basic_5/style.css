@@ -9,8 +9,20 @@ html, body {
     height: 100%;
     width: 100%;
 }
-body{
-    background-color: rgb(25, 24, 24);
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 35, 35);
+    position: relative;
+    overflow: hidden;
+}
+#cursor{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(213, 213, 213);
+    position: absolute;
+    mix-blend-mode: difference;
 }
 #nav{
     /* background-color: red; */
