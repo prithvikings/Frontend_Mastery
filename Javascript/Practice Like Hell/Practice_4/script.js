@@ -18,3 +18,4 @@ add.addEventListener("click",()=>{
 remove.addEventListener("click",()=>{
     ul.removeChild(ul.lastChild);
 })
+
