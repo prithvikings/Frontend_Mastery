@@ -1,0 +1,69 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1509803874385-db7c23652552?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+}
+#nav h2{
+    font-weight: 500;
+    font-family: pp woodland;
+    font-size: 40px;
+    color: white;
+}
+#nav i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+#full{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.544);
+    top: 0;
+    right: -35%;
+    /* jitni isko width denge utna hi minus ka value right mein denge jissey woh pura peeche chal jaye otherwise woh thoda sa reh hi jayega*/
+    backdrop-filter: blur(10px);
+    padding: 10vw 4vw;
+}
+#full h4{
+    font-family: pp woodland;
+    font-size: 50px;
+    font-weight: 650;
+    line-height: 70px;
+    cursor: pointer;
+}
+#full i{
+    font-size: 25px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 400;
+    cursor: pointer;
+}
