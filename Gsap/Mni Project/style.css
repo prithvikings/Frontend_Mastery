@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Hide scrollbars */
+}
+#main {
+    height: 100%;
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scrollbar-width: none; /* Firefox */
+}
+#main::-webkit-scrollbar {
+    display: none; /* Webkit browsers (Chrome, Safari) */
+}
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e4e4c4;
+}
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw;
+    background-color: #556043;
+}
+#page2 h1 {
+    font-family: pp woodland;
+    font-weight: 450;
+    color: #434b34;
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+    text-align: center;
+}
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #e4e4c4;
+}
