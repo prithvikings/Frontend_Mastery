@@ -1,0 +1,1 @@
+let initialPath=`M 0 100 Q 590 20 1560 80`;
