@@ -1,0 +1,155 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: general sans;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: auto;
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 455;
+}
+#heading{
+    margin-top: 150px;
+}
+#heading h1{
+    opacity: .7;
+    font-size: 10.5vw;
+    text-transform: uppercase;
+    font-weight: 580;
+    line-height: 0.85;
+    font-family: general sans medium;
+    margin-left: 50px;
+}
+
+#blocktext{
+    width: fit-content;
+}
+#blocktext h1{
+margin-left: 280px;
+}
+#blocktext h5{
+    text-align: right;
+    font-size: 0.8vw;
+    margin-top: 17px;
+    letter-spacing:1px;
+    /* letter space 1 vw bhi sexy lag raha hai */
+    text-transform: uppercase;
+}
+#smallheadings{
+    margin-top: 130px;
+    padding-right: 40px;
+}
+#smallheadings h5{
+    text-align: right;
+    font-size: 0.8vw;
+    line-height: 35px;
+}
+
+#herofooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 75px;
+}
+#herofooter a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: general sans medium;
+}
+
+#iconset{
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+    margin-top: 20px;
+}
+.circle{
+    background-color: #fff;
+    opacity: .6;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.circle i{
+    font-size: 20px;
+    color: black;
+}
+#second{
+    color: #fff;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+
+#second .elem{
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3.5vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    position: relative;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 6.6vw;
+    opacity: .7;
+}
+.elem h5{
+    font-size: 0.8vw;
+    font-weight: 300;
+}
+.last{
+    border-bottom: 1px solid #888;
+}
+.elem img{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    height: 130%;
+}
+#about-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
