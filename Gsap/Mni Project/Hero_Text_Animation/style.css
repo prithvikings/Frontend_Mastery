@@ -1,0 +1,25 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: poppins;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 150px;
+    font-weight: 550;
+    overflow: hidden;
+}
+h1 span{
+    display: inline-block;
+}

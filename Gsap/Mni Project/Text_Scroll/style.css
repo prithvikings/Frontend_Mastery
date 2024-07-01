@@ -1,0 +1,40 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+#page1,#page2,#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    padding: 5vw 0;
+}
+#move{
+    background-color: #d8ff04;
+    display: flex;
+    padding: 3vw 0;
+}
+.marquee{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    padding: 0 1.5vw;
+    transform: translate(-100%);
+}
+.marquee h1{
+    font-size:4vw;
+    font-family: neue machina;
+}
+.marquee img{
+    height: 60px;
+}
