@@ -1,3 +1,11 @@
+colortoadd{
+    color:#dcff02;
+    color: #a9ff03;
+    color: #17181a;
+    color: #000000;
+    color: #c68fff;
+    color: #5cffe4;
+}
 * {
     margin: 0%;
     padding: 0%;
@@ -12,11 +20,11 @@ body{
     overflow-x: hidden;
 }
 main{
-    height: 100%;
     width: 100%;
-    background-color: #FFF8EA;
+    background-color: #000000;
 
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -28,12 +36,12 @@ nav h2{
     font-weight: 500;
     font-family: pp woodland;
     font-size: 40px;
-    color: #594545;
+    color: #fff;
 }
 nav i{
     padding-right: 10px;
     font-size: 50px;
-    color: #594545;
+    color:#dcff02;
     cursor: pointer;
 }
 .ri-menu-3-line{
@@ -45,31 +53,41 @@ nav i{
 #nav-part1 a{
     text-decoration: none;
 }
+colortoadd{
+    color:#dcff02;
+    color: #a9ff03;
+    color: #17181a;
+    color: #000000;
+    color: #c68fff;
+    color: #5cffe4;
+}
 #full{
     height: 100%;
     width: 35%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: transparent;
     top: 0;
     right: -35%;
     /* jitni isko width denge utna hi minus ka value right mein denge jissey woh pura peeche chal jaye otherwise woh thoda sa reh hi jayega*/
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
     padding: 10vw 4vw;
+    z-index: 999;
 }
 #full h4{
-    font-family: pp woodland;
+    font-family: monument;
     font-size: 50px;
-    font-weight: 650;
-    line-height: 70px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 80px;
     cursor: pointer;
-    color: #594545;
+    color: #a9ff03;
 }
 #full i{
     font-size: 25px;
     position: absolute;
     top: 5%;
     right: 5%;
-    background-color: white;
+    background-color:#dcff02;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -98,30 +116,34 @@ nav i{
 }
 .ri-funds-fill{
     font-size: 60px;
-    color: #594545;
+    color: #a9ff03;
+
 
 }
 .ri-hand-heart-line{
     font-size: 60px;
-    color: #594545;
+    color: #a9ff03;
 
 }
 .ri-secure-payment-fill{
     font-size: 60px;
-    color: #594545;
+    color: #a9ff03;
 
 }
 .line{
     overflow: hidden;
     height: fit-content;
-    
+}
+.line2{
+    overflow: hidden;
+    height: fit-content;
 }
 #hero-head h1{
-    color: #594545;
+    color: #fff;
     font-size: 80px;
     line-height: 1.3;
     text-align: center;
-    font-family: poppins;
+    font-family: neue machina;
     font-weight: 550;
     letter-spacing: 0.6px;
 }
@@ -136,13 +158,13 @@ nav i{
 #hero-btn button{
     padding: 15px 40px;
     border-radius: 10px;
-    background-color: transparent;
-    color: #594545;
+    background-color:#dcff02;
+    color: #17181a;
     font-size: 25px;
-    font-family: poppins;
-    font-weight: 400;
+    font-family:poppins;
+    font-weight: 550;
     border: 3px solid transparent;
-    border-color: #815B5B;
+    border-color: #dcff02;
     cursor: pointer;
     margin: 5px;
     transition: all 0.2s ease; /* Smooth transition */
@@ -150,25 +172,24 @@ nav i{
 }
 
 #hero-btn button:hover{
-    background-color: #815B5B;
-    border-color: #815B5B;
-    color: #FFF8EA;
+    background-color:transparent;
+    border-color: #dcff02;
+    color: #fff;
     /* transition: all ease-in; */
 }
-
 
 #howitwork{
     height: 100vh;
     width: 100%;
-    background-color: #9E7676;
+    background-color: #000000;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
 }
 .ht{
-    font-size: 100px;
-    font-family: poppins;
+    font-size: 80px;
+    font-family: monument;
     font-weight: 660;
     text-align: start;
     color: #FFF8EA;
@@ -188,10 +209,10 @@ nav i{
 
 
 #Investor{
-    height: 80%;
-    width: 45%;
-    background-color: #594545;
-    box-shadow: 20px 10px 0px rgb(248, 219, 216);
+    height: 75%;
+    width: 40%;
+    background-color: #a9ff03;
+    box-shadow: 20px 10px 0px #c68fff;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -202,30 +223,30 @@ nav i{
 }
 #Investor h1{
     padding:100px 0px 0px 0px;
-    font-size: 60px;
+    font-size: 55px;
     font-family: poppins;
     font-weight: 600;
-    color: #F5EFE6;
+    color: #17181a;
 }
 
 #Investor ul{
     /* padding-left: 80px; */
-    font-size: 80px;
+    font-size: 75px;
 }
 #Investor li{
-    color: white;
+    color: #17181a;
     font-family: poppins;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 
 
 
 #startup{
-    height: 80%;
-    width: 45%;
-    background-color: #594545;
-    box-shadow: 20px 10px 0px rgb(248, 219, 216);
+    height: 75%;
+    width: 40%;
+    background-color: #a9ff03;
+    box-shadow: 20px 10px 0px #c68fff;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -236,26 +257,26 @@ nav i{
 }
 #startup h1{
     padding:100px 0px 0px 0px;
-    font-size: 60px;
+    font-size: 55px;
     font-family: poppins;
     font-weight: 600;
-    color: #F5EFE6;
+    color: #17181a;
 
 }
 
 #startup ul{
     /* padding-left: 80px; */
-    font-size: 80px;
+    font-size: 75px;
 }
 #startup li{
-    color: white;
+    color: #17181a;
     font-family: poppins;
-    font-size: 60px;
+    font-size: 55px;
 }
 #value-startup{
     height: 100vh;
     width: 100%;
-    background-color: #FFF8EA;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,9 +293,10 @@ nav i{
 #v-s-head h1{
     font-family: poppins;
     font-size: 100px;
-    color: #594545;
+    color: #a9ff03;
 
 }
+
 #v-s-text{
     text-align: left;
     width: 60%;
@@ -287,19 +309,19 @@ nav i{
 #vs-tt{
     height: 70%;
     width: 70%;
-    background-color: #594545;
+    background-color:#dcff02;
     display: flex;
     border-radius: 50px;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     padding-left: 80px;
-    box-shadow: 25px 15px 0px salmon;
+    box-shadow: 25px 15px 0px #c68fff;
 }
 #vs-tt h2{
     margin-bottom: 15px;
     font-size: 60px;
-    color:#F5EFE6;
+    color: #17181a;
     font-family: pp woodland;
     font-weight: 600;
 }
@@ -308,7 +330,7 @@ nav i{
     font-size: 30px;
     font-family: poppins;
     font-weight: 450;
-    color:#F5EFE6;
+    color: #17181a;
     margin-bottom: 20px;
 }
 
@@ -317,7 +339,7 @@ nav i{
 #value-investor{
     height: 100vh;
     width: 100%;
-    background-color: #FFF8EA;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,7 +356,7 @@ nav i{
 #v-i-head h1{
     font-family: poppins;
     font-size: 100px;
-    color: #594545;
+    color: #a9ff03;
 
 }
 #v-i-text{
@@ -349,19 +371,19 @@ nav i{
 #vi-tt{
     height: 70%;
     width: 70%;
-    background-color: #594545;
+    background-color:#dcff02;
     display: flex;
     border-radius: 50px;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     padding-left: 80px;
-    box-shadow: 25px 15px 0px salmon;
+    box-shadow: 25px 15px 0px #c68fff;
 }
 #vi-tt h2{
     margin-bottom: 15px;
     font-size: 60px;
-    color:#F5EFE6;
+    color: #17181a;
     font-family: pp woodland;
     font-weight: 600;
 }
@@ -370,10 +392,61 @@ nav i{
     font-size: 30px;
     font-family: poppins;
     font-weight: 450;
-    color:#F5EFE6;
+    color: #17181a;
     margin-bottom: 20px;
 }
 
-hr{
-    width: 10px;
+colortoadd{
+    color:#dcff02;
+    color: #a9ff03;
+    color: #17181a;
+    color: #000000;
+    color: #c68fff;
+    color: #5cffe4;
 }
+
+/* #loader{
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background-color: #111;
+}
+
+#loader h2{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-family: pp woodland;
+    font-size: 70px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.paisa-loader i{
+    position: absolute;
+    top: 50%;
+    font-size: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#dcff02;
+}
+.reveal .parent{
+    overflow-x: hidden;
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.reveal .parent .child{
+    display: block;
+}
+
+.parent .child span{
+    display: inline-block;
+} */

@@ -33,16 +33,21 @@ tl.to(".parent .child",{
     duration:1,
     ease:Circ.easeInOut
 })
-tl.from(".ri-money-rupee-circle-fill",{
+tl.from(".paisa-loader i",{
     y:"-100%",
     // opacity:0,
     scale:0,
-    duration:0.4,
+    duration:3,
+    rotate:"360deg"
+})
+tl.to(".paisa-loader i",{
+    opacity:0,
+    duration:0.6,
 })
 tl.to("#loader",{
-    delay:1,
+    delay:0.2,
     height:0,
-    duration:1,
+    duration:0.9,
     ease:Circ.easeInOut
 })
 tl.to("#green",{
@@ -60,4 +65,12 @@ tl.to("#green",{
 })
 }
 
+
 loader();
+
+function later(){
+    tl.from("#page1",{
+        y:1200,
+        opacity:0
+    })
+}
