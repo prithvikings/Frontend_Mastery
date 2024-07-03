@@ -159,8 +159,8 @@ function valueprop(){
             trigger:"#v-s-head",
             scroller:"body",
             markers:false,
-            start:"top 30%",
-            end:"top 5%",
+            start:"top 70%",
+            end:"top 12%",
             scrub:0.1
         }
     })
@@ -172,8 +172,8 @@ function valueprop(){
             trigger:"#v-s-text",
             scroller:"body",
             markers:false,
-            start:"top 30%",
-            end:"top 5%",
+            start:"top 70%",
+            end:"top 12%",
             scrub:0.1
         }
     },"-=0.4")
@@ -186,21 +186,21 @@ function valueprop(){
             trigger:"#v-i-head",
             scroller:"body",
             markers:false,
-            start:"top 30%",
-            end:"top 5%",
+            start:"top 70%",
+            end:"top 12%",
             scrub:0.1
         }
     })
     cl.from("#v-i-text",{
         duration:1,
         opacity:0,
-        y:100,
+        y:-100,
         scrollTrigger:{
             trigger:"#v-i-text",
             scroller:"body",
             markers:false,
-            start:"top 30%",
-            end:"top 5%",
+            start:"top 70%",
+            end:"top 12%",
             scrub:0.1
         }
     },"-=0.4")

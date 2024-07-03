@@ -20,6 +20,7 @@ body{
     overflow-x: hidden;
 }
 main{
+    height: 100%;
     width: 100%;
     background-color: #000000;
 
@@ -29,26 +30,29 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 2vw;
-    height: 10vh;
+    padding: 1vw 2vw;
+    height: 5%;
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 180px;
 }
 nav h2{
     font-weight: 500;
     font-family: pp woodland;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
 }
 nav i{
-    padding-right: 10px;
-    font-size: 50px;
+    padding-right: 2px;
+    font-size: 30px;
     color:#dcff02;
     cursor: pointer;
 }
 .ri-menu-3-line{
-    font-size: 35px;
+    font-size: 25px;
 }
 .ri-money-rupee-circle-fill{
-    font-size: 50px;
+    font-size: 40px;
 }
 #nav-part1 a{
     text-decoration: none;
@@ -62,7 +66,7 @@ colortoadd{
     color: #5cffe4;
 }
 #full{
-    height: 100%;
+    height: fit-content;
     width: 35%;
     position: absolute;
     background-color: transparent;
@@ -75,15 +79,15 @@ colortoadd{
 }
 #full h4{
     font-family: monument;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     letter-spacing: 3px;
-    line-height: 80px;
+    line-height: 60px;
     cursor: pointer;
     color: #a9ff03;
 }
 #full i{
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: 5%;
     right: 5%;
@@ -97,51 +101,54 @@ colortoadd{
     cursor: pointer;
 }
 #hero{
-    height: 90vh;
+    height: 100%;
     width: 100%;
-    /* background-color: red; */
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     position: relative;
 }
 #iconset{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vw;
+    margin-top: 1vw;
     gap: 1vw;
+    margin-bottom: 10vw;
 }
 .ri-funds-fill{
-    font-size: 60px;
+    font-size: 40px;
     color: #a9ff03;
 
 
 }
 .ri-hand-heart-line{
-    font-size: 60px;
+    font-size: 40px;
     color: #a9ff03;
 
 }
 .ri-secure-payment-fill{
-    font-size: 60px;
+    font-size: 40px;
     color: #a9ff03;
 
 }
 .line{
     overflow: hidden;
-    height: fit-content;
+    height: 10%;
+    
+
 }
 .line2{
     overflow: hidden;
     height: fit-content;
+    /* background-color: blue; */
 }
 #hero-head h1{
     color: #fff;
-    font-size: 80px;
-    line-height: 1.3;
+    font-size: 50px;
     text-align: center;
     font-family: neue machina;
     font-weight: 550;
@@ -152,21 +159,20 @@ colortoadd{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 #hero-btn button{
-    padding: 15px 40px;
+    padding: 10px 35px;
     border-radius: 10px;
     background-color:#dcff02;
     color: #17181a;
-    font-size: 25px;
+    font-size: 15px;
     font-family:poppins;
     font-weight: 550;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-color: #dcff02;
     cursor: pointer;
-    margin: 5px;
+    margin:20px;
     transition: all 0.2s ease; /* Smooth transition */
     
 }
@@ -179,7 +185,8 @@ colortoadd{
 }
 
 #howitwork{
-    height: 100vh;
+    margin-top: 70px;
+    height: 100%;
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -188,17 +195,17 @@ colortoadd{
     flex-direction: column;
 }
 .ht{
-    font-size: 80px;
+    font-size: 75px;
     font-family: monument;
     font-weight: 660;
     text-align: start;
     color: #FFF8EA;
     height: 10vw;
-    margin-top: 20px;
+    
 }
 
 #howitwork #card{
-    height: 90vw;
+    height: 90%;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -209,9 +216,9 @@ colortoadd{
 
 
 #Investor{
-    height: 75%;
-    width: 40%;
-    background-color: #a9ff03;
+    height: 85%;
+    width: 42%;
+    background-color: #a9ff03;;
     box-shadow: 20px 10px 0px #c68fff;
     display: flex;
     align-items: center;
@@ -222,29 +229,26 @@ colortoadd{
 
 }
 #Investor h1{
-    padding:100px 0px 0px 0px;
-    font-size: 55px;
+    padding:50px 0px 0px 0px;
+    font-size: 50px;
     font-family: poppins;
     font-weight: 600;
     color: #17181a;
 }
 
-#Investor ul{
-    /* padding-left: 80px; */
-    font-size: 75px;
-}
+
 #Investor li{
     color: #17181a;
     font-family: poppins;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 
 
 
 #startup{
-    height: 75%;
-    width: 40%;
+    height: 85%;
+    width: 42%;
     background-color: #a9ff03;
     box-shadow: 20px 10px 0px #c68fff;
     display: flex;
@@ -252,28 +256,29 @@ colortoadd{
     /* justify-content: center; */
     flex-direction: column;
     gap: 30px;
+    position: relative;
     /* background-color: royalblue; */
 
 }
 #startup h1{
-    padding:100px 0px 0px 0px;
-    font-size: 55px;
+    padding:50px 0px 0px 0px;
+    font-size: 50px;
     font-family: poppins;
     font-weight: 600;
     color: #17181a;
-
 }
-
 #startup ul{
-    /* padding-left: 80px; */
-    font-size: 75px;
+    padding-left: 60px;
 }
 #startup li{
     color: #17181a;
     font-family: poppins;
-    font-size: 55px;
+    font-size: 47px;
 }
 #value-startup{
+    /* background-color: rosybrown; */
+    position: relative;
+    margin-top: 150px;
     height: 100vh;
     width: 100%;
     background-color: #000000;
@@ -283,6 +288,7 @@ colortoadd{
 }
 
 #v-s-head{
+    padding-left: 100px;
     width: 40%;
     height: 100%;
     display: flex;
@@ -293,7 +299,7 @@ colortoadd{
 #v-s-head h1{
     font-family: poppins;
     font-size: 100px;
-    color: #a9ff03;
+    color:#dcff02;
 
 }
 
@@ -307,9 +313,9 @@ colortoadd{
     /* background-color: rgb(59, 13, 13); */
 }
 #vs-tt{
-    height: 70%;
-    width: 70%;
-    background-color:#dcff02;
+    height: 72%;
+    width: 72%;
+    background-color: #a9ff03;
     display: flex;
     border-radius: 50px;
     align-items: start;
@@ -320,14 +326,14 @@ colortoadd{
 }
 #vs-tt h2{
     margin-bottom: 15px;
-    font-size: 60px;
+    font-size: 50px;
     color: #17181a;
     font-family: pp woodland;
     font-weight: 600;
 }
 
 #vs-tt p{
-    font-size: 30px;
+    font-size: 20px;
     font-family: poppins;
     font-weight: 450;
     color: #17181a;
@@ -346,6 +352,7 @@ colortoadd{
 }
 
 #v-i-head{
+    padding-right: 100px;
     width: 40%;
     height: 100%;
     display: flex;
@@ -356,8 +363,7 @@ colortoadd{
 #v-i-head h1{
     font-family: poppins;
     font-size: 100px;
-    color: #a9ff03;
-
+    color:#dcff02;
 }
 #v-i-text{
     text-align: left;
@@ -369,9 +375,9 @@ colortoadd{
     /* background-color: rgb(59, 13, 13); */
 }
 #vi-tt{
-    height: 70%;
-    width: 70%;
-    background-color:#dcff02;
+    height: 72%;
+    width: 72%;
+    background-color: #a9ff03;
     display: flex;
     border-radius: 50px;
     align-items: start;
@@ -382,14 +388,14 @@ colortoadd{
 }
 #vi-tt h2{
     margin-bottom: 15px;
-    font-size: 60px;
+    font-size: 50px;
     color: #17181a;
     font-family: pp woodland;
     font-weight: 600;
 }
 
 #vi-tt p{
-    font-size: 30px;
+    font-size: 20px;
     font-family: poppins;
     font-weight: 450;
     color: #17181a;
