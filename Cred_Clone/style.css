@@ -1,0 +1,241 @@
+@font-face {
+    font-family: GilroyBold;
+    src: url(./Fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: GilroyRegular;
+    src: url(./Fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: GilroySemiBold;
+    src: url(./Fonts/Gilroy-SemiBold.ttf)
+}
+@font-face {
+    font-family: kfo1;
+    src: url(./Fonts/KFOlCnqEu92Fr1MmEU9fBBc4.ttf);
+}
+@font-face {
+    font-family: kfo2;
+    src: url(./Fonts/KFOmCnqEu92Fr1Mu4mxK.ttf);
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroyregular;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: sandybrown; */
+}
+
+nav{
+    width: 100%;
+    height: 20vh;
+    padding: 0vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+}
+nav img{
+    width: 2.8vw;
+}
+nav a{
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1vw;
+    font-family: gilroybold;
+}
+
+.right-nav{
+    display: flex;
+    gap: 2vw;
+}
+
+.part-1{
+    width: 100%; 
+    background-color: #111;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.5vh;
+}
+.part-1 h1{
+    margin-top: -10vh;
+    font-size: 7vw;
+    font-family: gilroybold;
+    text-align: center;
+}
+.part-1 p{
+    font-size: 1.5vw;
+    font-family: gilroybold;
+    text-align: center;
+
+}
+
+.part-1 button{
+    padding: 1vw 3vw;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    font-family: gilroybold;
+    border: 1px solid #111;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.part-1 button:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.part-2{
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./IMG/video-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.part-2 img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#img3{
+    position: absolute; 
+    bottom: -50vh;
+    z-index: 5;
+    width: 21.5vw;
+}
+
+#img2, #img4{
+    z-index: 4;
+    width: 21.5vw;
+    position: absolute;
+    bottom: -59vh;
+
+}
+#img2{
+    left: 25%;
+}
+#img4{
+    right: 25%;
+}
+#img1, #img5{
+    position: absolute;
+    bottom: -50vh;
+    width: 21.5vw;
+
+}
+#img1{
+    left: 10%;
+}
+#img5{
+   right: 10%;
+}
+
+.part-same{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0vw 10vw;
+    color: #fff;
+    flex-direction: column;
+}
+.part-3{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./IMG/deserve-more-bg.jpg);
+}
+.part-same h1{
+    font-size: 5vw;
+    font-family: gilroyregular;
+    line-height: 10vh;
+}
+.part-same h3{
+    font-size: 1.7vw;
+    font-family: gilroyregular;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+.part-same p{
+    font-size: 1vw;
+    font-family: GilroyRegular;
+    font-weight: 596;
+    width: 45%;
+}
+.part-3 button{
+    margin-top: 5vh;
+    padding: 1vw 3vw;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    font-family: gilroysemibold;
+    border: 1px solid #fff;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.part-3 button:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.strip{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    gap: 5vh;
+    padding: 0vw 10vw;
+    background-color: #fff;
+}
+
+.strip h3{
+    font-size: 1.3vw;
+}
+
+.strip img{
+    width: 80vw;
+}
+
+.part-4{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./IMG/money-matters-bg.jpg);
+}
+
+.part-4 button{
+    margin-top: 5vh;
+    padding: 1vw 3vw;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    font-family: gilroysemibold;
+    border: 1px solid #fff;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.part-4 button:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
