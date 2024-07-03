@@ -111,11 +111,10 @@ nav i{
     color: #594545;
 
 }
-#hero-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1vw;
+.line{
+    overflow: hidden;
+    height: fit-content;
+    
 }
 #hero-head h1{
     color: #594545;

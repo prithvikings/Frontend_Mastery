@@ -31,11 +31,10 @@ cl.from("nav",{
     opacity:0,
     y:-30
 })
-cl.from("#hero-head",{
+cl.from(".line h1",{
     opacity:0,
-    duration:0.3,
-    delay:0.1,
-    y:-10
+    duration:0.8,
+    y:100
 })
 cl.from("#hero-btn",{
     opacity:0,
