@@ -479,3 +479,141 @@ nav a{
     height: 100%;
     object-fit: cover;
   }
+
+
+  @media (max-width:500px) {
+    nav{
+        padding-top: 1vw;
+        height: 10vh;
+    }
+    nav img{
+        width: 8.8vw;
+    }
+    nav a{
+        font-size: 3.4vw;
+    }
+    .part-1{
+        height: 90vh;
+        padding: 0vw 10vw;
+    }
+    .part-1 h1{
+        font-size: 15vw;
+    }
+    .part-1 p{
+        font-size: 4.5vw;
+        font-family: gilroyregular;
+    }
+    
+    .part-1 button{
+        padding: 4vw 10vw;
+        font-size: 4.2vw;
+    }
+    .part-same h1 {
+        font-size: 12vw;
+        line-height: normal;
+    }
+    .part-same h3 {
+        font-size: 5.5vw;
+        margin-top: 1.5vh;
+        margin-bottom: 2vh;
+    }
+    .part-same p {
+        font-size: 4vw;
+        width: 95%;
+  }
+  .part-3 button{
+    padding: 3vw 6vw;
+    font-size: 3.2vw;
+    margin-top: 3vh;
+}
+.part-4 button {
+    margin-top: 3vh;
+    padding: 3vw 6vw;
+    font-size: 3.2vw;
+}
+.strip{
+    position: relative;
+    overflow: hidden;
+}
+.strip img{
+    width: 300vw;
+    margin-left: -50vw;
+}
+.strip h3{
+    font-size: 6vw;
+}
+#part-5{
+    flex-direction: column;
+    height: 100vh;
+}
+.lft-part5{
+    width: 100%;
+}
+.rgt-part5{
+    width: 100%;
+}
+.phone{
+    width: 70vw;
+    height: 70vh;
+}
+.phone img{
+    width: 74vw;
+}
+.scroll-txt{
+    padding-top: 40vh;
+    height: 50vh;
+}
+.scroll-txt h1{
+    font-size: 12vw;
+}
+.scroll-txt p{
+    margin-top: -5vh;
+    font-size: 4vw;
+}
+.part-7 button{
+    margin-top: 3vh;
+    padding: 3vw 6vw;
+    font-size: 3.2vw;
+}
+.part-8{
+    flex-direction: column;
+    gap: 10vw;
+}
+.top-part-9 {
+    gap: 16vw;
+    padding-top: 10vh;
+
+}
+.rating {
+    gap: 2vh;
+}
+.rating-value h1{
+    font-size: 12vw;
+}
+.rating-value h3{
+    font-size: 3.5vw;
+}
+.rating img{
+    width: 22vw;
+}
+.rating button{
+    padding: 1vw 10vw;
+    gap: 5px;
+}
+.rating button h1{
+    font-size: 2vw;
+}
+.rating button i{
+    font-size: 3vw;
+}
+.btm-part-9 {
+    margin-top: -20vh;
+}
+.slider-part{
+    width: 70vw;
+}
+.swiper-slide {
+    font-size: 23px;
+  }
+
+}
