@@ -306,10 +306,6 @@ nav a{
     /* height: 100%; */
 }
 
-#scroll-1{
-    /* transition: all cubic-bezier(0.19, 1, 0.22, 1)1s; */
-}
-
 #scroll-2, #scroll-3, #scroll-4{
     opacity: 0;
     transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
