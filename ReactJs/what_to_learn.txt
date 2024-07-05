@@ -1,0 +1,97 @@
+--------Story of React-----------------
+
+facebook ko ek problem najar aai ki real time mein wo notification and reactions ko show nahi kar paa rahe hai unhe reactions notification and other data deliver karne mein page reload karna pad raha hai and wo isliye kyunki they were using something called php ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banai ye library khaas thi kyunki ye data ko real time mein dikha paa rahi thi par is librayar ka kaam karne ka tareeka thoda different tha.
+
+This reaload happens because browser ka nature hota hai jab bhi page mein kuch change hua to poora DOM tree refresh kara deta hai.jiske wajah se poora page re render hoga. jo ki kaafi inefficient hai matlab ki socho agar ek change par DOM ek baar refresh ho raha hai to 1lakh change pe 1lakh baar refresh hoga iske wajah se browser crash ho sakta hai. 
+
+As we said earlier react ka kaam karne ka tarika thoda different hai so react js kabhi main DOM tree ko update nahi karti hai directly matlab ki agar page mein kuch bhi change hua to directly main DOM tree update nahi hoga is library ka khudka ek DOM tree hai uska naam hai Virtual DOM ye DOM tree exact copy hai real DOM tree ka. bas ek difference hai wo hai ki jab bhi Virtual DOM mein kuch change hoga to sirf use change kiya jayega jo ki change hua hai naa ki poore tree ko refresh kiya jayega.
+
+Thats Why react become so famous and usefull for big Application.
+
+------Advantage of React---------
+1. Very Very less page reload
+2. extreme use reusable components
+3. it has many opportunities
+
+
+react learning had 2 parts->
+1.react js se code karna 
+2.react js ka interview crack karna
+
+-------react learn what matters-------
+
+what - js library to maintain the front end efficiently
+
+why - efficient and lightweight
+
+how - create components and make data if you need it, link the data and change data whenevr you want, react will react jab bhi data change hoaga 
+
+when - jab aapko ek thoda bade level par app create karna ho jisme khoob saari chezien ho rahi hai and khoob saara reusable components structure hai.
+
+
+KUCHHHH KAAMMM KARLO
+---------------------------- --------------
+
+code karne ki jagah banana -Vscode
+code chalande ki jagah banana -chrome
+default code lekar ana
+react coding mein saar code khud se nahi likhna padta hai react walo ne aapko ek tool diya hai uska naam hai create-react-app but we will not use it now cause usme kabhi kabhi kuch problem hai cause it has next js included in it thats why
+so we will be using vite from vite we will get react raw app which has nextjs involved in it.
+
+1. vite install KARLO
+2. vite se naya app banao
+
+use this command-
+npm create vite@latest
+
+ye command srif tab chalega jab node and npm installed hoga
+
+code chalana 
+output dikhana
+code ke folder structure ko smajhna 
+
+aap components banate ho aur ye saare components jaate hai ek parent components par aur parent components ko body mein put kar diya jaata hai
+styling karna react mein
+
+components ek function hai jo ki return karega jsx
+jsx html ki tarah dikhne wala syntax but uske paas kuch superpower hai jo html ke paas nahi hai
+
+<h1>2+2</h1> in html we know the output will be 2+2 visible
+but in jsx we can write it like this-
+<h1>{2+2}</h1> and the output will be 4 visible
+
+jsx is very similar to html with superpowers
+React js
+
+React will React when state changes
+-------------------------------
+Advance js topics for React-
+1.ES5 VS ES6
+2.ARRAY, OBJECTS, FUNCTIONS
+3.ARROW FUNCTIONS / NORMAL FUNCTIONS
+4.ARRAY METHODS (MAP,FILTER,REDUCE,FIND,FINDINDEX)
+5.DESTUCTURING
+6.REST SPREAD
+7.TRY CATCH
+8.ASYNC AWAIT
+9.PROMISES
+
+STARTING WITH REACT.js
+--------------------------------
+0. INSTALL NODE.js
+1. create-next-app (React folder description)
+2. UseState Hook (Varible of readct) and Real DOM and Virtual DOM
+3. calling function in react(Function)
+4. Two way binding 
+5. adding normal/module CSS in react and useRed (for validation, DOM properties)
+6. toDo app
+7. Breaking the components (importance of components)
+8. props (normal data, children)
+9. Introduction to class components (via lifecycle method) *not imp
+10. useEffect lifecycle Hook
+11. implimenting ajax in react (fetch/axios)
+12. gallery app usering lorem pixum api (react pagination)
+13. routing
+14. showing flash message (react toastify)
+15. context api(higher order components {HOC}, higher order function)
+16. Cashbook app
