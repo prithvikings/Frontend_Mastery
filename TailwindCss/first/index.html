@@ -5,22 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Way</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<style>
+    @font-face {
+        font-family: 'GilroyBold';
+        src: url('./Fonts/Gilroy-Bold.ttf');
+    }
+    .font-gilroybold {
+        font-family: 'GilroyBold', sans-serif;
+    }
+</style>
 </head>
-<body class="h-full w-full m-0 p-0 box-border">
-    <div id="main" class="min-h-screen w-screen bg-slate-500 grid place-content-center">
-        <div class="">
-            <div class=" max-w-sm mx-auto bg-stone-400 rounded-xl shadow-black shadow-2xl flex justify-center items-center">
-                <div>
-                    <img class="h-2/5 w-2/5" src="https://images.unsplash.com/photo-1469460340997-2f854421e72f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+<body class="h-auto w-full m-0 p-0 box-border bg-slate-900">
+    <main class="h-[100%] w-[100%]">
+
+    <!-- navbar goes here -->
+        <nav class="bg-slate-300 h-18 w-full flex justify-between items-center">
+            <div class="font-gilroybold text-black text-3xl p-4">Prithvi</div>
+            <ul class="hidden lg:flex text-2xl font-semibold justify-between text-gray-600 font-gilroy gap-8">
+                <li class=" cursor-pointer hover:text-gray-900">Home</li>
+                <li class="cursor-pointer hover:text-gray-900">Services</li>
+                <li class="cursor-pointer hover:text-gray-900">About</li>
+            </ul>
+            
+
+<div class="mr-7 hidden opacity-100 bg-orange-500 text-white hover:bg-orange-600 text-sm px-3 py-[10px] medium:text-base medium:px-6 medium:py-3 font-semibold rounded-md lg:flex gap-2 justify-center items-center font-nunitoSans cursor-pointer ">Login/Signup</div>
+
+            <i class="lg:hidden ri-menu-line mr-4 text-2xl cursor-pointer text-black"></i>
+        </nav>
+    <!-- navend here -->
+
+    <!-- header start here -->
+        <header>
+            <div class="flex flex-col lg:flex-row justify-center items-center  h-full w-[100%] p-0 m-0">
+                <div id="text" class="mt-8 w-full h-full flex items-center justify-center">
+                    <h1 class="text-4xl text-center mb-7 lg:mb-0 lg:text-6xl text-white font-semibold">Great Learning <br> Path is here</h1>
                 </div>
-                <div>
-                    <div">
-                        <h1 class="text-2xl font-semibold">Prithvi Raj</h1>
-                        <p>By Prithvi Raj</p>
-                    </div>
+                <div id="img" class="h-full w-full flex items-center justify-center">
+                    <img class="w-[70%] lg:w-[65%] h-[100%] object-cover object-center mt-9 lg:mt-5" src="https://pwskills.com/images/homePage/hero-bg.png" alt="">
                 </div>
+            </div>
+        </header>
+    <!-- header end here -->
+   
+    <!-- lower card start here-->
+
+     <!-- our student start here -->
+    <div id="lower" class="mt-32 h-auto w-[100%]  flex flex-col text-center items-center flex-wrap p-10 ">
+        <div id="hard" class="w-full h-auto flex flex-wrap flex-col items-center">
+            <h1 class="uppercase font-semibold text-2xl lg:text-4xl text-white">"Pure HardWork no shortcuts!"</h1>
+            <div class="lg:w-56 lg:mt-6 mb-12 w-36 h-1 border-b-4 border-yellow-400 mt-5" ></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-60 h-80 flex flex-col items-center mb-12 ">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/bc14c559-783f-4f78-b7a7-7a638810c7da.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">600+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Different Courses</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/7cf6e398-9b29-40d6-a0f8-dad29ccd13e1.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">700,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Student Enrolled</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">10,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- our student end  -->
+     <div class="w-full h-48 bg-fixed object-cover bg-[url('/Cred_Clone/IMG/neopop-image-mock.png')]" ></div>
+     <!-- our product start here -->
+    <div id="lower" class=" h-auto w-[100%]  flex flex-col text-center items-center flex-wrap p-10 ">
+        <div id="hard" class="w-full h-auto flex flex-wrap flex-col items-center">
+            <h1 class="uppercase font-semibold text-2xl lg:text-4xl text-white">"Our Product"</h1>
+            <div class="lg:w-36 lg:mt-6 mb-12 w-36 h-1 border-b-4 border-yellow-400 mt-5" ></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">Job Portal</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">10,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">10,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">10,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
+            </div>
+            <div class="w-60 h-80 flex flex-col items-center mb-12">
+                <img class="w-44 h-32" src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg" alt="">
+                <p class="mt-5 text-3xl font-bold text-white">10,000+</p>
+                <p class="mt-5 text-3xl font-bold text-gray-300">Succesful Transition</p>
             </div>
         </div>
     </div>
+     <!-- our product end here -->
+    <!-- lower card end here-->
+    </main>
 </body>
 </html>
