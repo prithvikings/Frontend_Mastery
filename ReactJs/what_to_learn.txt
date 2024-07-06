@@ -64,8 +64,11 @@ components
 components banana
 components jodna 
 components mein reaction of data change smajhna 
+
 react will react when state changes to state ka sahi se use karna hai like hume agar 12 h1 ka lana tha to pehle hum aise karte they <h1>12</h1>
 but now we use state and data state se ata hai like this <h1>{state}</h1>
+
+react ka naam react isliye hai kyunki wo react karta hai jab bhi state change hoti hai, aur yahi main model hai poore react ka yahi uska heart hai aur yahi uske kaam karne ka tareeka hai.
 
 components mein data bhejna and receive karna 
 components mein khud ka data banana
