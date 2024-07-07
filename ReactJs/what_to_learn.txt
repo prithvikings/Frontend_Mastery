@@ -36,7 +36,7 @@ code karne ki jagah banana -Vscode
 code chalande ki jagah banana -chrome
 default code lekar ana
 react coding mein saar code khud se nahi likhna padta hai react walo ne aapko ek tool diya hai uska naam hai create-react-app but we will not use it now cause usme kabhi kabhi kuch problem hai cause it has next js included in it thats why
-so we will be using vite from vite we will get react raw app which has nextjs involved in it.
+so we will be using vite from vite we will get react raw app which has nextjs involved in it and also it take too much time some times it is utility vite is also a utility.
 
 1. vite install KARLO
 2. vite se naya app banao
@@ -77,6 +77,8 @@ components mein bane huye data ko update karna
 
 jsx is very similar to html with superpowers
 React js
+
+when we install node their is one package also install with that is called npm-node package manager and other is npx that means node package executer
 
 React will React when state changes
 -------------------------------
