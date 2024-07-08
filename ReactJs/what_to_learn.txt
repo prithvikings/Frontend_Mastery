@@ -62,7 +62,7 @@ but in jsx we can write it like this-
 
 components
 components banana
-
+ 
 whenever you make components or function make sure you are making its start with capital alphabet and if we are making it in vite we have to use jsx and in vite their is script tag in index.html and in create react app their is already react script is running in it that includes main.js.
 
 
