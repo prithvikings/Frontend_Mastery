@@ -84,6 +84,11 @@ React js
 
 when we install node their is one package also install with that is called npm-node package manager and other is npx that means node package executer
 
+
+Ui Updation is completely taken care by react
+
+their are many hooks are available usememo, UseState, UseCallback and many more.
+
 React will React when state changes
 -------------------------------
 Advance js topics for React-
@@ -101,7 +106,7 @@ STARTING WITH REACT.js
 --------------------------------
 0. INSTALL NODE.js
 1. create-next-app (React folder description)
-2. UseState Hook (Varible of readct) and Real DOM and Virtual DOM
+2. UseState Hook (Varible of react) and Real DOM and Virtual DOM
 3. calling function in react(Function)
 4. Two way binding 
 5. adding normal/module CSS in react and useRed (for validation, DOM properties)
