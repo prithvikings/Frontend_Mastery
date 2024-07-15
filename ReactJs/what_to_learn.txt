@@ -2,6 +2,7 @@
 
 facebook ko ek problem najar aai ki real time mein wo notification and reactions ko show nahi kar paa rahe hai unhe reactions notification and other data deliver karne mein page reload karna pad raha hai and wo isliye kyunki they were using something called php ab is problem se nipatne ke liye 2013 mein ek facebook ke engineer ne ek library banai ye library khaas thi kyunki ye data ko real time mein dikha paa rahi thi par is librayar ka kaam karne ka tareeka thoda different tha.
 
+
 This reaload happens because browser ka nature hota hai jab bhi page mein kuch change hua to poora DOM tree refresh kara deta hai.jiske wajah se poora page re render hoga. jo ki kaafi inefficient hai matlab ki socho agar ek change par DOM ek baar refresh ho raha hai to 1lakh change pe 1lakh baar refresh hoga iske wajah se browser crash ho sakta hai. 
 
 As we said earlier react ka kaam karne ka tarika thoda different hai so react js kabhi main DOM tree ko update nahi karti hai directly matlab ki agar page mein kuch bhi change hua to directly main DOM tree update nahi hoga is library ka khudka ek DOM tree hai uska naam hai Virtual DOM ye DOM tree exact copy hai real DOM tree ka. bas ek difference hai wo hai ki jab bhi Virtual DOM mein kuch change hoga to sirf use change kiya jayega jo ki change hua hai naa ki poore tree ko refresh kiya jayega.
