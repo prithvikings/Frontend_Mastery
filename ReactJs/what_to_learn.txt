@@ -31,7 +31,7 @@ when - jab aapko ek thoda bade level par app create karna ho jisme khoob saari c
 
 
 KUCHHHH KAAMMM KARLO
----------------------------- --------------
+------------------------------------------
 
 code karne ki jagah banana -Vscode
 code chalande ki jagah banana -chrome
