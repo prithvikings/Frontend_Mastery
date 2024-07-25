@@ -42,6 +42,7 @@ so we will be using vite from vite we will get react raw app which has nextjs in
 1. vite install KARLO
 2. vite se naya app banao
 
+
 use this command-
 npm create vite@latest
 
