@@ -3,7 +3,6 @@
 -undefined type is undefined and null type is object null is basically humne kisi ko dhunda par woh mila nahi.
 undefined basically humne koi variable banaya par ussey define nahi kiya then it will return undefined.
 
-
 #event deligation
 
 #closure method in js
