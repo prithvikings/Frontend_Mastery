@@ -1,0 +1,172 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    height: 13vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 12vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 15vw;
+}
+.logo img{
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.mid-nav{
+    display: flex;
+    align-items: center;  
+    gap: 4vh;
+}
+.mid-nav h1{
+    font-family: gilroy;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color:rgb(67, 65, 65);
+    cursor: pointer;
+}
+.end-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+.end-nav h1{
+    font-family: gilroy;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color:rgb(67, 65, 65);
+    cursor: pointer;
+}
+.end-nav button{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 600;
+    background-color: #4fbb58;
+    color: white;
+    height: 7vh;
+    width: 10vw;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.end-nav button:hover{
+    background-color: #1a421d;
+}
+
+
+
+
+
+
+/* Bodyyyyyyy-Hero-Text */
+
+.hero{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+/* background-color: rebeccapurple; */
+gap: 8vh;
+}
+
+.hero-text{
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2;
+}
+
+.hero-text h1{
+    font-size: 9vh;
+    font-weight: 500;
+    font-family: gilroy;
+}
+
+.hero-text h3{
+    font-size: 4vh;
+    font-family: gilroy;
+    font-weight: 500;
+    padding-top: 1vh;
+}
+.hero-text h3 span{
+    background-color: red;
+    background-image: linear-gradient(45deg, #9013bd, #ff04b4);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.hero-btn{
+    /* background-color: firebrick; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.hero-btn .btn-1{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 600;
+    background-color: #4fbb58;
+    color: white;
+    height: 6.5vh;
+    width: 11vw;
+    padding: 0.5vw;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero-btn .btn-1:hover{
+    background-color: #1a421d;
+}
+
+
+.btn-2{
+    background-color: transparent;
+    border: 2px solid #d8e7d9;
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 600;
+    height: 6.5vh;
+    width: 11vw;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+
+.trusted{
+    background-color: #4fbb58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+}
