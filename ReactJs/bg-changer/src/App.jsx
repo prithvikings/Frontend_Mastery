@@ -8,7 +8,7 @@ function App() {
         className="h-screen w-full flex justify-center items-end "
         style={{ backgroundColor: color }}
       >
-        <div className="w-8/12 h-14 rounded-xl bg-slate-100 mb-6 flex justify-around items-center">
+        <div className="w-8/12 h-14 rounded-xl bg-slate-100 mb-6 flex justify-around items-center shadow-2xl border-2 border-black">
           <button
             className="bg-red-700 h-10 w-20 rounded-lg text-xl font-custom text-white"
             onClick={() => {
