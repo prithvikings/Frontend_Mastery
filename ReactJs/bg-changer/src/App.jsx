@@ -18,7 +18,7 @@ function App() {
             Red
           </button>
           <button
-            className="bg-yellow-300 h-10 w-20 rounded-lg text-xl font-custom text-black"
+            className="bg-yellow-300 h-10 w-20 rounded-lg text-xl font-custom text-black" style={{ backgroundColor: "Yellow" }}
             onClick={() => {
               setColor("yellow");
             }}
