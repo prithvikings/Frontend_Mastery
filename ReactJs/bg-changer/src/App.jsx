@@ -1,3 +1,11 @@
+// IMPORTANT TAKE AWAY FROM VIDEO
+// The on click method in React expects a function reference
+// You can't directly pass parameters inside the function, instead, you need to pass it as a reference or use arrow function syntax
+// Refresh karne pe olive is lie aa rah a kio ke usestate ki defualt value di ha humne
+// To update the state we need to use the setState method
+// setState method takes a callback function as an argument
+// Inside the callback function we can update the state
+
 import { useState } from "react";
 
 function App() {
