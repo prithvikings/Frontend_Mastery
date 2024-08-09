@@ -1,0 +1,39 @@
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 50px;
+    /* background: red; */
+}
+
+
+.logo img{
+object-fit: cover;
+object-position: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-size: large;
+}
+
+.btn button{
+width: Hug (75px)px;
+height: Hug (31px)px;
+
+padding: 6px 16px 6px 16px;
+gap: 10px;
+outline: none;
+color: white;
+text-align: center;
+cursor: pointer;
+background-color: #D01C28;
+}

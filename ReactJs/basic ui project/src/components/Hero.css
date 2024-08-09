@@ -1,0 +1,69 @@
+.hero{
+
+}
+.hero__content{
+    width: Hug (595px)px;
+    height: Hug (613px)px;
+    gap: 36px;
+    opacity: 0px;
+    
+}
+.hero__title{
+    font-family: Poppins;
+    font-size: 108px;
+    font-weight: 800;
+    line-height: 102px;
+    text-align: left;
+    width: 595px;
+    height: 306px;
+    gap: 0px;
+    opacity: 0px;        
+}
+.hero__text{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    width: 404px;
+    height: 91px;
+    gap: 0px;
+    opacity: 0px;
+color: #5A5959;        
+}
+.hero__button{
+    width: Hug (75px)px;
+    height: Hug (31px)px;
+    
+    padding: 6px 16px 6px 16px;
+    gap: 10px;
+    outline: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color: #D01C28;
+    font-size: 15px;
+}
+.also{
+    width: Hug (131px)px;
+height: Hug (67px)px;
+gap: 16px;
+opacity: 0px;
+
+}
+.also p{
+    font-family: poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.36px;
+text-align: left;
+width: 131px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+color: #5A5959;
+
+}
+.hero-img{
+
+}
