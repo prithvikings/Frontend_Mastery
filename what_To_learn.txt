@@ -8,7 +8,6 @@ forms inputs html5
 semantics
 div id class 
 
-
 what is html?
 html=content
 
