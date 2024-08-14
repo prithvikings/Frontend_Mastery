@@ -12,7 +12,17 @@ function Nav() {
             <a href='#'>About</a>
             <a href="#">Contact</a>
         </div>
+        
         <div className='btn'>
+        <li>
+                <select id="themeSwitcher">
+                    <option value="">Select a theme</option>
+                    <option value="theme-light">Light</option>
+                    <option value="theme-dark">Dark</option>
+                    <option value="theme-ocean">Ocean</option>
+                    <option value="theme-sepia">Sepia</option>
+                </select>
+            </li>
             <button>Login</button>
         </div>
     </div>

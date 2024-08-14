@@ -25,15 +25,36 @@ object-position: center;
     font-size: large;
 }
 
-.btn button{
-width: Hug (75px)px;
-height: Hug (31px)px;
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn li select{
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    padding: 2px 10px;
+    outline: none;
+    color: var(--font-color);
+    border: none;
+    background: var(--secondary);
+    border-radius: 4px;
+}
 
-padding: 6px 16px 6px 16px;
-gap: 10px;
-outline: none;
-color: white;
-text-align: center;
-cursor: pointer;
-background-color: #D01C28;
+.btn button{
+    padding: 6px 16px 6px 16px;
+    color: white;
+    font-size: 18px;
+    background-color: #D01C28;
+    font-family: poppins;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: #8f020b;
 }

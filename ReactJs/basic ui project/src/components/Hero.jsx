@@ -18,8 +18,7 @@ function Hero() {
             <div className="shops">
             <img src="/images/amazon.png" alt="Shoe Image" />
             <img src="/images/flipkart.png" alt="Shoe Image" />
-
-            </div>
+          </div>
           </div>
         </div>
         <div className="hero-img">

@@ -1,12 +1,19 @@
 .hero{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
 }
 .hero__content{
     width: Hug (595px)px;
     height: Hug (613px)px;
-    gap: 36px;
-    opacity: 0px;
-    
+    gap: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: yellow; */
 }
 .hero__title{
     font-family: Poppins;
@@ -17,37 +24,60 @@
     width: 595px;
     height: 306px;
     gap: 0px;
-    opacity: 0px;        
+    opacity: 0px;    
+    /* background-color: green;     */
 }
 .hero__text{
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    text-align: left;
     width: 404px;
-    height: 91px;
-    gap: 0px;
+
+/* background-color: red;  */
+   height: 91px;
     opacity: 0px;
 color: #5A5959;        
 }
+.hero__button{
+    padding: 6px 16px 6px 16px;
+    color: white;
+    font-size: 18px;
+    background-color: #D01C28;
+    font-family: poppins;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.hero__button:hover{
+    background-color: #8f020b;
+}
+
 .hero__button{
     width: Hug (75px)px;
     height: Hug (31px)px;
     
     padding: 6px 16px 6px 16px;
-    gap: 10px;
+
+    gap: 5px;
     outline: none;
     color: white;
     text-align: center;
     cursor: pointer;
     background-color: #D01C28;
     font-size: 15px;
-}
+} 
+*/
+
 .also{
-    width: Hug (131px)px;
-height: Hug (67px)px;
-gap: 16px;
+    width: fit-content;
+    background-color: #000;
+gap: 100px;
+display: flex;
+align-items: start;
+justify-content: center;
+flex-direction: column;
 opacity: 0px;
 
 }
@@ -57,13 +87,23 @@ font-size: 16px;
 font-weight: 400;
 line-height: 19.36px;
 text-align: left;
-width: 131px;
+width: 151px;
 height: 19px;
-gap: 0px;
-opacity: 0px;
 color: #5A5959;
-
+}
+.shops{
+    /* background: #000; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    /* background-color: #000; */
 }
 .hero-img{
-
+object-fit: cover;
+/* background-color: aquamarine; */
+padding-left: 20px;
+padding-top: 40px;
+object-position: center;
 }
