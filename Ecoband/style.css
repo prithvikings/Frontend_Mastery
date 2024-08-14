@@ -1,0 +1,139 @@
+@font-face {
+    font-family: GilroyM;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}@font-face {
+    font-family: GilroyBlack;
+    src: url(./Fonts/Gilroy-Black.ttf);
+}@font-face {
+    font-family: GilroyBold;
+    src: url(./Fonts/Gilroy-Bold.ttf);
+}@font-face {
+    font-family: GilroyExtra;
+    src: url(./Fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+    font-family: GilroyHeavy;
+    src: url(./Fonts/Gilroy-Heavy.ttf);
+}@font-face {
+    font-family: GilroyLight;
+    src: url(./Fonts/Gilroy-Light.ttf);
+}@font-face {
+    font-family: GilroyMedium;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}@font-face {
+    font-family: GilroySemi;
+    src: url(./Fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: GilroyThin;
+    src: url(./Fonts/Gilroy-Thin.ttf);
+}@font-face {
+    font-family: GilroyUltra;
+    src: url(./Fonts/Gilroy-UltraLight.ttf);
+}@font-face {
+    font-family: Futura;
+    src: url(./Fonts/Futura\ Bk\ BT\ Book.ttf);
+}@font-face {
+    font-family: FuturaItalic;
+    src: url(./Fonts/Futura\ Bk\ BT\ Book\ Italic.ttf);
+}
+@font-face {
+    font-family: FuturaHeavy;
+    src: url(./Fonts/Futura\ Hv\ BT\ Heavy.ttf);
+}@font-face {
+    font-family: FuturaHeavyItalic;
+    src: url(./Fonts/Futura\ Hv\ BT\ Heavy\ Italic.ttf);
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: GilroyM;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+#lft-nav,#cntr-nav,#rght-nav{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+#cntr-nav a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #111;
+}
+
+#rght-nav a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #111;
+}
+#rght-nav button{
+    padding: 0.8vw 1.2vw;
+    background: none;
+    border-radius: 50px;
+    font-size: 0.9vw;
+    border: 2px solid #b9e901;
+}
+
+/* part-1 */
+
+#part-1{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+#background{
+    position: absolute;
+    left: 50%;
+    top: -32%;
+    transform: translate(-50%,0%);
+}
+.lft-part-1{
+    width: 30%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}.cntr-part-1{
+    width: 40%;
+    height: 100%;
+    background-color: #b9e901;
+}.rght-part-1{
+    width: 30%;
+    height: 100%;
+    background-color: green;
+}
+.img-one{
+    width: 18vw;
+    height: 18vw;
+    border-radius: 20px 20px 250px 250px;
+    background-image: url(https://images.unsplash.com/photo-1511936606692-5e0d73f6b638?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRldHJhcGFjayUyMGp1bmdsZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-one svg{
+    margin-top: -2.6vw;
+    margin-left: 1vw;
+}
