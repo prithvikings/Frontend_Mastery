@@ -137,3 +137,10 @@ nav{
     margin-top: -2.6vw;
     margin-left: 1vw;
 }
+
+.comment{
+    width: 5vw;
+    height: 5vw;
+    border: 50%;
+    background-image: url(https://unsplash.com/photos/DGH1u80sZik);
+}
