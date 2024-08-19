@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Handlingeve from "./components/Handlingeve";
+import State from "./components/State";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-     <Handlingeve/>
+     <State/>
       
     </>
   );
