@@ -1,12 +1,12 @@
 import { useState } from "react";
-import State from "./components/State";
+import CardAnimation from "./components/CardAnimation";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-     <State/>
+     <CardAnimation/>
       
     </>
   );
