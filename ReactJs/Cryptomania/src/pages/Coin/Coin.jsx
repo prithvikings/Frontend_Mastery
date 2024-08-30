@@ -55,22 +55,28 @@ function Coin() {
     <li>Crypto Market Rank</li>
     <li>{coinData.market_cap_rank}</li>
   </ul>
+
   <ul>
-    <li>Current Market Price</li>
-    <li>{currency.symbol}{coinData.market_data.current_price[currency.name]}</li>
+  <li>Current Market Price</li>
+<li>{currency.symbol} {coinData.market_data.current_price[currency.name] ? coinData.market_data.current_price[currency.name].toLocaleString() : 'N/A'}</li>
+
   </ul>
+
   <ul>
     <li>Market Cap</li>
     <li>{currency.symbol}{coinData.market_data.market_cap[currency.name]}</li>
   </ul>
+
   <ul>
     <li>24 Hour High</li>
     <li>{currency.symbol}{coinData.market_data.high_24h[currency.name]}</li>
   </ul>
+
   <ul>
     <li>24 Hour Low</li>
     <li>{currency.symbol}{coinData.market_data.low_24h[currency.name]}</li>
   </ul>
+
 </div>
 
 
