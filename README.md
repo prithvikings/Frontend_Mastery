@@ -1,4 +1,4 @@
-⚡# Front-End Web Development Roadmap
+# ⚡Front-End Web Development Roadmap
 
 ## Overview
 This repository contains a comprehensive roadmap I followed to master front-end web development. It includes resources, code examples, and projects that helped me build a solid foundation in HTML, CSS, JavaScript, and advanced frameworks like React. This guide is designed to be a helpful reference for anyone looking to start or advance their front-end development skills.
