@@ -14,10 +14,14 @@
 }
 
 .hero h1{
-    line-height: 1;
+    line-height: 1.2;
     font-size: max(4vw,36px);
     font-family: gilroy;
     font-weight: 600;
+}
+
+.hero i{
+    font-weight: 200;
 }
 
 .hero p{
