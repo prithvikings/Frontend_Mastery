@@ -52,6 +52,14 @@ const Header = () => {
                 </Button>
               </Link>
             )}
+            {user?.unsafeMetadata?.role === "candidate" && (
+              <Link to="/My_Jobs">
+                <Button variant="ghost" className="rounded-full">
+                  <PenBox size={20} className="mr-2" />
+                  My Job
+                </Button>
+              </Link>
+            )}
             <UserButton
               appearance={{
                 elements: {
