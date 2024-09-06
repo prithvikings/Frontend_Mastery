@@ -15,8 +15,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { updateApplicationStatus } from "@/api/apiApplication";
-import useFetch from "@/Hooks/use_fetch";
-
+import useFetch from "@/hooks/use-fetch";
 import { BarLoader } from "react-spinners";
 
 const ApplicationCard = ({ application, isCandidate = false }) => {

@@ -15,7 +15,7 @@ import {
 import { ApplyJobDrawer } from "@/components/apply-job";
 import ApplicationCard from "@/components/application-card";
 
-import useFetch from "@/Hooks/use_fetch";
+import useFetch from "@/hooks/use-fetch";
 import { getSingleJob, updateHiringStatus } from "@/api/apiJobs";
 
 const JobPage = () => {

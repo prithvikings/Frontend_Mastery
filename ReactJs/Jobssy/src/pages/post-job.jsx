@@ -13,7 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import useFetch from "@/Hooks/use_fetch";
+import useFetch from "@/hooks/use-fetch";
 import { useUser } from "@clerk/clerk-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import MDEditor from "@uiw/react-md-editor";
@@ -62,7 +62,7 @@ const PostJob = () => {
   };
 
   useEffect(() => {
-    if (dataCreateJob?.length > 0) navigate("/Job_list");
+    if (dataCreateJob?.length > 0) navigate("/jobs");
   }, [loadingCreateJob]);
 
   const {
@@ -83,7 +83,7 @@ const PostJob = () => {
   }
 
   if (user?.unsafeMetadata?.role !== "recruiter") {
-    return <Navigate to="/Job_list" />;
+    return <Navigate to="/jobs" />;
   }
 
   return (

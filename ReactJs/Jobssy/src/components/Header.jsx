@@ -7,10 +7,9 @@ import {
   SignIn,
   useUser,
 } from "@clerk/clerk-react";
-import { Button } from "../ui/button";
-import { PenBox } from "lucide-react";
-import { BriefcaseBusiness } from "lucide-react";
-import { Heart } from "lucide-react";
+import { Button } from "./ui/button";
+import { BriefcaseBusiness, Heart, PenBox } from "lucide-react";
+
 const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
 
@@ -45,18 +44,10 @@ const Header = () => {
           </SignedOut>
           <SignedIn>
             {user?.unsafeMetadata?.role === "recruiter" && (
-              <Link to="/Post_job">
+              <Link to="/post-job">
                 <Button variant="destructive" className="rounded-full">
                   <PenBox size={20} className="mr-2" />
                   Post a Job
-                </Button>
-              </Link>
-            )}
-            {user?.unsafeMetadata?.role === "candidate" && (
-              <Link to="/My_Jobs">
-                <Button variant="ghost" className="rounded-full">
-                  <PenBox size={20} className="mr-2" />
-                  My Job
                 </Button>
               </Link>
             )}
@@ -71,12 +62,12 @@ const Header = () => {
                 <UserButton.Link
                   label="My Jobs"
                   labelIcon={<BriefcaseBusiness size={15} />}
-                  href="/My_Jobs"
+                  href="/my-jobs"
                 />
                 <UserButton.Link
                   label="Saved Jobs"
                   labelIcon={<Heart size={15} />}
-                  href="/Save_job"
+                  href="/saved-jobs"
                 />
                 <UserButton.Action label="manageAccount" />
               </UserButton.MenuItems>
