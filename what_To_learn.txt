@@ -12,6 +12,7 @@ div id class
 what is html?
 html=content
 
+
 why- because of content 
 
 where we need to write it- VS-CODE
