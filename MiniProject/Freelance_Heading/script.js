@@ -10,3 +10,10 @@ window.onscroll=()=>{
 const togglemenu=()=>{
     menu.classList.add('show-menu');
 }
+// var allowCopyAndPaste = (e)=> {
+//     e.stopImmediatePropagation();
+//     return true;
+//   };
+//   document.addEventListener("copy", allowCopyAndPaste, true);
+//   document.addEventListener("paste", allowCopyAndPaste, true);
+//   document.addEventListener("onpaste", allowCopyAndPaste, true);
