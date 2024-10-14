@@ -14,3 +14,4 @@ button.addEventListener("click",()=>{
         mode="default";
     }
 })
+
