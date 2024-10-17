@@ -36,7 +36,8 @@
 }
 
 .Navbar select option{
-    background-color: #09005c;
+
+    background-color: #1a1a1a;
     color: white;
     cursor:pointer;
 }
@@ -125,4 +126,40 @@
     .Navbar button img{
         width: 12px;
     }
+}
+
+
+.Navbar {
+    color: #ffffff;
+    border-bottom: 2px solid #2c2c2c;
+    background-color: #191d28; /* Dark blue background */
+}
+
+
+.Navbar select {
+    border: 2px solid #8dc647; /* Green border */
+    color: #8dc647; /* Green text */
+}
+
+.Navbar select option {
+    background-color: #2c2f36; /* Darker background for options */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Navbar button {
+    color: #191d28;
+    background: #8dc647; /* Green background */
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    
+    .Navbar select option {
+        background-color: #2c2f36; /* Consistent with the non-media query style */
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
 }
