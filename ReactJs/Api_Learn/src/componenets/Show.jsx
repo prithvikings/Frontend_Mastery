@@ -7,10 +7,12 @@ function Show() {
   const getProduct = () => {
     const api = "https://fakestoreapi.com/products";
 
-    axios.get(api).then(response => {
+    axios.get(api)
+    .then(response => {
       console.log(response);
       setProducts(response.data);
-    }).catch(err => {
+    })
+    .catch(err => {
       console.error(err);
     });
   }

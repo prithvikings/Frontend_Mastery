@@ -5,8 +5,12 @@ import axios from 'axios';
 const App = () => {
   const [images,setImages] = useState([]);
   const getImages=async()=>{
-    const response=await axios.get("https://picsum.photos/v2/list?page=2&limit=50")
-    setImages(response.data)
+    try {
+      const response=await axios.get("https://picsum.photos/v2/list?page=2&limit=50")
+      setImages(response.data)
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   // useEffect(()=>{
