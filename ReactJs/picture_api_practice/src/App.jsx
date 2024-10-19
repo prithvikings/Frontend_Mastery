@@ -3,11 +3,10 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const App = () => {
-  const [images, setImages] = useState([]);
-
-  const getImages = async() => {
-    const response =await axios.get("https://picsum.photos/v2/list?page=2&limit=50");
-    setImages(response.data);
+  const [images,setImages] = useState([]);
+  const getImages=async()=>{
+    const response=await axios.get("https://picsum.photos/v2/list?page=2&limit=50")
+    setImages(response.data)
   }
 
   return (
