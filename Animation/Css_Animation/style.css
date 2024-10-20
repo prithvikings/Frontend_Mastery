@@ -1,0 +1,70 @@
+/* css animation 
+-it is used to create simple animation without using any js or gsap
+-it is easy to understand and use
+-it is supported by all the modern browsers
+-At first we have to create Animation in css and then we have to use it.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding: 20px;
+    background-color: #111;
+}
+
+/*css Animation Application*/
+
+#box{
+    width: 300px;
+    height: 300px;
+    background-color: crimson;
+    border-radius: 10px;
+    animation: move 2s linear infinite;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+/* css animation creation */
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+
+/* before and after pseudo element */
+
+h1::after{
+    content: "Like Share";
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1::before{
+    content: "Hello Doston";
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+}

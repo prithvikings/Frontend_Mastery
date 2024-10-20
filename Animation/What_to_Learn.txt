@@ -1,0 +1,10 @@
+1.What is animation?
+2.css animation
+3.gsap animation
+4.ScrollTrigger
+5.Locomotive js
+6.Lenis js
+7.Swiper js
+8.React animation with framer motion
+
+
