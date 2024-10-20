@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiperJS</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: neue machina;
+            color: white;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #111;
+            padding: 30px;
+        }
+
+        .swiper{
+            width: 50%;
+            height: 50%;
+            background-color: #333;
+            padding: 30px;
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+        }
+        .swiper-slide p{
+            font-size: 15px;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>Opportunities come infrequently. When it rains gold, put out the bucket, not the thimble.</p>
+          </div>
+
+
+          <div class="swiper-slide"><P>Ups and downs in life are very important to keep us going because a straight line even in an ECG means we are not alive.</P></div>
+
+
+          <div class="swiper-slide"><P>I don't believe in work-life balance. I believe in work-life integration. Make your work and life meaningful and fulfilling, and they will complement each other.</P></div>
+
+          <div class="swiper-slide"><p>The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks.     </p></div>
+          <div class="swiper-slide"><p>The only way to do great work is to love what you do.</p></div>
+          <div class="swiper-slide"><p>Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.</p></div>
+          <div class="swiper-slide"><p>The way to get started is to quit talking and begin doing.</p></div>
+          <div class="swiper-slide"><p>The best way to predict the future is to invent it.</p></div>
+          <div class="swiper-slide"><p>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</p></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
