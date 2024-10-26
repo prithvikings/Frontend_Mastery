@@ -91,7 +91,7 @@ hels("prithvi");
 
 //map filter
 /*
-map filter - dono hi array pe chalte hai, aru dono ka kaam hai array par kuch perform karna and ek naya array return karna
+map filter - dono hi array pe chalte hai, aur dono ka kaam hai array par kuch perform karna and ek naya array return karna
 
 map-har element par kuch karo and naye array mein rakho 
 important baat map ke andar return karna ke wajah se hi elements naye array mein place hota hai
@@ -101,7 +101,7 @@ filter-jo condition match kare wo element naye array mein rakho, aur jo nahi
 */
 var marr=[1,2,3,4,5];
 marr.map((val)=>{
-    var ans=val;
+    var ans=val*2;
     console.log(ans);
 })
 
@@ -132,9 +132,9 @@ console.log("Making change : ",hmans);
 
 //map filter mein ek hi farak hai, map saare bande lautata hai matlab ki count kam nahi hoga, filter bando ko kam kar skta hai
 
-//jab og array ka size kam naa hona ho waha map use hota hai
+//jab log array ka size kam naa hona ho waha map use hota hai
 
-//jab og array ka size kam karna ho waha filter use hota hai
+//jab log array ka size kam karna ho waha filter use hota hai
 
 //ek array mein se saare wo nums hata do jo ki 3 se chhote hai
 var karr=[1,2,3,4,5,6];
@@ -153,8 +153,12 @@ var empl=[
     {name:"Deepika",age:35,gender:"Female"},
     {name:"Karan",age:55,gender:"others"},
 ]
-const emplans=empl.filter((elem)=>{
-    return elem.gender=="Male"&&elem.age>20;
+const emplans=empl.filter(elem=>{
+    if(elem.gender=="Male"&&elem.age>20){
+        return elem;
+    }else{
+        return null;
+    }
 })
 console.log("Before Any Change state: ",empl);
 console.log("Making change : ",emplans);

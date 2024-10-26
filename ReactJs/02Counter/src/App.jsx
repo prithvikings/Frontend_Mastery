@@ -14,13 +14,22 @@ function removeValue(){
 }
   return (
     <>
-     <h1>Counter: {counter} </h1>
-     {/* <button onClick={()=>{addValue()}}>Increase: {counter}</button>
-     <button onClick={()=>{removeValue()}}>Decrease: {counter}</button> */}
      {/* Another way of doing this  */}
-     <button onClick={()=>{if(counter<20){setcounter(counter+1)}}}>addValue: {counter}</button>
-     <button onClick={()=>{if(counter>0){setcounter(counter-1)}}}>removeValue: {counter}</button>
-     <p>footer: {counter}</p>
+      {/* <button onClick={()=>{if(counter<20){setcounter(counter+1)}}}>addValue: {counter}</button>
+      <button onClick={()=>{if(counter>0){setcounter(counter-1)}}}>removeValue: {counter}</button>
+      <p>footer: {counter}</p> */}
+      <h1>Counter: {counter}</h1>
+      <button onClick={()=>{
+        if(counter<20){
+          setcounter(counter+1);
+        }
+      }}>Increase</button>
+      <button onClick={()=>{
+        if(counter>0){
+          setcounter(counter-1);
+        }
+      }}>Decrease</button>
+      <p>footer: {counter}</p>
     </>
   )
 }

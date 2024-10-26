@@ -8,8 +8,9 @@ const temperature = document.getElementById("temperature");
 const apiKey = "ed5daf1fcf9a4c8c9a7174705241910";
 
 const getData = async () => {
+    const api=`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput.value}&aqi=no`;
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput.value}&aqi=no`);
+        const response = await fetch(api);
         const data = await response.json();
         console.log(data);
 

@@ -4,17 +4,28 @@ import { useState } from 'react';
 function Show() {
   const [products, setProducts] = useState([]);
 
-  const getProduct = () => {
-    const api = "https://fakestoreapi.com/products";
+  // const getProduct = () => {
+  //   const api = "https://fakestoreapi.com/products";
 
-    axios.get(api)
-    .then(response => {
-      console.log(response);
+  //   axios.get(api)
+  //   .then(response => {
+  //     console.log(response);
+  //     setProducts(response.data);
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   });
+  // }
+
+  //using async await method
+  const getProduct=async()=>{
+    const api="https://fakestoreapi.com/products";
+    try{
+      const response =await axios.get(api);
       setProducts(response.data);
-    })
-    .catch(err => {
+    }catch(err){
       console.error(err);
-    });
+    }
   }
 
   const addProduct = () => {
