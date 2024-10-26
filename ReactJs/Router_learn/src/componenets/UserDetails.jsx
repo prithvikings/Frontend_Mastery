@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 function UserDetails() {
     const {name} =useParams();
+    // yaha pe hum log name isliye likh rahe hai kyunki Routing me UserDetails me :name diya hai
     const navigate=useNavigate();
 
   return (

@@ -10,6 +10,7 @@ function Routing() {
         <Route path='/' element={<Home/>}/>
         <Route path='/User' element={<User/>}/>
         <Route path='/User/:name' element={<UserDetails/>}/>
+        {/* yaha pe jo :name hai wo dynamic route hai jo ki UserDetails me pass hua hai */}
         <Route path='/About' element={<About/>}/>
       </Routes>
   )
