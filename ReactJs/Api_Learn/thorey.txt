@@ -1,0 +1,73 @@
+Hum log Koi Bhi Api call karne ke liye ajax concept use karate hai and ajax ko implement karne ke liye hum fetch api ya axios use karate hai.
+fetch inbuilt hota hai js mein but ye bahut simple nahi hai isliye hum axios use karate hai.
+bade projects mein axios use hota hai.
+frontend pe data dikhhane ke liye hum map function use karate hai pehle ek array banayenge and phir usme data store karayenge and phir usko return karayenge ek naye array mein jo ki map function use karne ke liye hota hai you see the example in show.jsx file.
+
+Ab lekin ek problem aya ki agar hum home page pe jayenge toh data load nahi hoga and agar get prouct button pe click karenge toh data load hoga. iss problem ko solve karne ke liye hum useEffect hook use karate hai. 
+
+useEffect hook ek function hota hai jo ek component ko render karne ke liye call hota hai.
+issey smjhne se pehle hum react ka lifecycle ke bare mein smjhna padega.
+
+Three phases of react lifecycle:
+1. Mounting- when component is created and inserted into the DOM.
+Agar Humne home pe jayenge toh home component create hoga and usko DOM mein insert karayenge aur home component mount hoga.
+
+2. Updating- when component is re-rendered.
+Agar hum get product button pe click karenge toh home component re-render hoga aur usko DOM mein update karayenge aur home component updating hoga.When usestate is changed or changes in view is done then component is re-rendered.
+
+3. Unmounting- when component is removed from the DOM.
+agar hum home se show pe jaye toh home component remove hoga from the DOM aur home component unmount hoga.
+
+
+UseEffect Hook:
+useEffect hook ek function hota hai jo ek component ko render karne ke liye call hota hai,
+iska first parameter ek function hota hai jo ek component ko render karne ke liye call hota hai.
+iska second parameter ek array hota hai jo ek component ko render karne ke liye call hota hai.
+useEffect hook ek return function bhi hota hai jo ek component ko unmount karne ke liye call hota hai.
+Ab hum agar first state ko change karenge toh useEffect hook call hoga aur agar second state ko change karenge toh useEffect hook call nahi hoga aur page unmount hoga and then phir mount hoga is react rconcilation bhi bolte hai.
+
+reconciliation is process of comparing two trees and updating the DOM accordingly. and refreshing the whole component is called re-rendering and it is done in reconciliation to agar hume sirf ek state ko change karna hai toh hum re-rendering nahi karenge aur sirf ussey update karenge aur agar bahut saare state ko change karna hai toh hum re-rendering karenge aur whole component refresh hoga.
+
+refreshing the component is called re-rendering and it is combination of component deletion and creation.
+
+So Now we will see how to update the state in react without re-rendering the whole component isko rokne ke liye hum log last mein return function ke end mein ek square bracket [] use karate hai.
+
+Woh square bracket [] hai uska 2 kaam hai ek kaam hai faltu ka re rendering ko stop karne ke liye aur aur agar hum usme kisi ko pass karenge toh woh allow karega ki re rendering ho.
+
+for Example:
+const services=()=>{
+    const [first,setfirst]=useState("This is Normal data");
+    const [second,setsecond]=useState("This is large data");
+    useEffect(()=>{
+        console.log("services is called");
+        return ()=>{
+            console.log("services is unmount");
+        }
+    },[])
+}
+
+
+
+axios ko hume ek utils ke folder mein file banana chahiye issey kya pure project mein hume jab v axios use karna hoga to wahi se use karenge aur sabhi ache se connection bana rahega.
+the code of axios is in utils file.
+
+import axios from "axios";
+const instance=axios.create({
+    baseURL:"https://fakestoreapi.com"
+});
+
+export default instance;
+
+aur ab jaha v jarurt hoga hum log axios use kar sakte hai header mein likhenge.
+import axios from "./utils/axios";
+
+const getProduct= async()=>{
+    try{
+      const response=await axios.get("/products");
+      setProducts(response.data);
+    }catch(err){
+      console.error(err);
+    }
+  }
+
+ab aise axios use karne se hum log api ka base url main utils mein rakhke uska route pass kar sakte hai sirf.

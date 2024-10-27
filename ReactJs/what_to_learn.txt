@@ -148,18 +148,18 @@ STARTING WITH REACT.js
 --------------------------------
 0. INSTALL NODE.js
 1. create-next-app (React folder description)
-2. UseState Hook (Varible of react) and Real DOM and Virtual DOM
+2. UseState Hook (Varible of react) and Real DOM and Virtual DOM ✅
 3. calling function in react(Function)
 4. Two way binding 
-5. adding normal/module CSS in react and useRed (for validation, DOM properties)
+5. adding normal/module CSS in react and useRed (for validation, DOM properties) ✅
 6. toDo app
-7. Breaking the components (importance of components)
-8. props (normal data, children)
-9. Introduction to class components (via lifecycle method) *not imp
-10. useEffect lifecycle Hook
-11. implimenting ajax in react (fetch/axios)
+7. Breaking the components (importance of components)✅
+8. props (normal data, children)✅
+9. Introduction to class components (via lifecycle method) *not imp ✅
+10. useEffect lifecycle Hook ✅
+11. implimenting ajax in react (fetch/axios) ✅
 12. gallery app usering lorem pixum api (react pagination)
-13. routing
+13. routing ✅
 14. showing flash message (react toastify)
 15. context api(higher order components {HOC}, higher order function)
 16. Cashbook app

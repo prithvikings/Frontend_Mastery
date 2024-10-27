@@ -1,0 +1,3 @@
+Ek jagah se dusre jagah par data pass karna using props is called props drilling.
+React Context API is used to avoid props drilling.
+props drilling sirf parents to child hi jaa sakta hai.

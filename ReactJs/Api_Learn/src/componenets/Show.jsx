@@ -1,5 +1,5 @@
-import React from 'react'
-import axios from 'axios';
+import React, { useEffect } from 'react'
+import axios from "../utils/Axios";
 import { useState } from 'react';
 function Show() {
   const [products, setProducts] = useState([]);
@@ -18,10 +18,10 @@ function Show() {
   // }
 
   //using async await method
-  const getProduct=async()=>{
-    const api="https://fakestoreapi.com/products";
+  const getProduct= async()=>{
+    // const api="https://fakestoreapi.com/products";
     try{
-      const response =await axios.get(api);
+      const response=await axios.get("/products");
       setProducts(response.data);
     }catch(err){
       console.error(err);
@@ -43,7 +43,12 @@ function Show() {
       console.error(err);
     });
   }
-
+//Useeffect ke help se hum automatically getProduct function ko call kar sakte hai.
+  // useEffect(()=>{
+  //   getProduct();
+  // },[])
+  
+  
   console.log(products);
 
   return (
@@ -55,12 +60,21 @@ function Show() {
 
         <hr className='my-10' />
 
-        <ul >
+       <ul>
+        {products.length>0 ? (products.map((products,index)=>(
+          <li key={index} className='p-5 bg-red-200 rounded'>
+            Product Name: {products.title}
+            Catergory Name: {products.category}
+            <img className="object-cover w-24 h-18" src={`${products.image}`} alt="" />
+          </li>
+        ))):(<li>No Product Found</li>)}
+       </ul>
+
+        {/* <ul >
           {products.length > 0 ? (
             products.map((product, index) => (
               <li key={index} className='p-5 bg-red-200 rounded'>
                 Product Name: {product.title}
-    
                 Category Name: {product.category}
                 <img className='object-cover w-24 h-18' src={`${product.image}`} alt="" />
               </li>
@@ -68,7 +82,7 @@ function Show() {
           ) : (
             <li>No Product Found</li>
           )}
-        </ul>
+        </ul> */}
       </div>
     </>
   );
