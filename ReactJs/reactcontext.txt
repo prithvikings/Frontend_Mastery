@@ -1,3 +1,25 @@
 Ek jagah se dusre jagah par data pass karna using props is called props drilling.
 React Context API is used to avoid props drilling.
 props drilling sirf parents to child hi jaa sakta hai.
+props drilling is not a good practice, cause hum log faltu mein parents ka use kar rahe hai.
+
+React Context API is used to avoid props drilling.
+isme basically hum ek context create karte hai, aur usme data store karte hai.
+aur us context ko hum use karne ke liye hum ek provider bana kar use kar sakte hai.
+aur us provider ko hum use karne ke liye hum ek consumer bana kar use kar sakte hai.
+
+step0: main.jsx mein context.jsx import karo and wrap the app component with context component.
+Step1: Create a context
+Step2: Create a provider:-
+    import { createContext } from "react";
+    export const userContext = createContext();
+    const Context=(props)=>{
+        return(
+            <userContext.Provider value={{user:"John"}}> //iske andar hum data pass karte hai value attribute se.
+                {props.children}
+            </userContext.Provider>
+        )
+    }
+
+Step3: Create a consumer
+
