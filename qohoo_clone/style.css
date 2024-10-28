@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #15191c;
+}
+
+main nav{
+    padding: 3vh 6vw;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+main nav img{
+    width: 7vw;
+}
+
+main nav .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    color: #fff;
+}
+main nav button{
+    background-color: #25292c;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.7vh 1.2vw;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+main nav button:hover{
+    background-color: #fff;
+    color: #15191c;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+main .hero{
+
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    justify-content: start;
+    gap: 5vh;
+    padding-left: 5vw;
+}
+main .hero .hero-text{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+main .hero .hero-text h1{
+    font-size: 3.5vw;
+    line-height: 1.2;
+    font-weight: 700;
+}
+main .hero .hero-text p{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+main .hero .hero-text .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
