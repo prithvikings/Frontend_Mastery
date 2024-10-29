@@ -13,14 +13,14 @@ const Home = () => {
   // console.log(products)
 
   const {search}=useLocation();
-  const category=  decodeURIComponent(search.split("=")[1]);
+  const category = decodeURIComponent(search.split("=")[1]);
   const [filteredProducts,setFilteredProducts]=useState(products)
-  // console.log(category)
+  console.log(category)
   const getProductcategory=async()=>{
     try{
-      const res=await axios.get(`/products/category/${category}`)
-      console.log(res.data)
-      setFilteredProducts(res.data)
+      const {data}=await axios.get(`products/category/${category}`)
+      // console.log(data)
+      setFilteredProducts(data)
     }catch(err){
       console.log(err)
     }
@@ -32,7 +32,7 @@ const Home = () => {
     }
   },[category])
 
-  console.log(filteredProducts)
+  // console.log(filteredProducts)
 
   return (products?
     <>

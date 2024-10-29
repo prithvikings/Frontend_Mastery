@@ -11,12 +11,15 @@ const Nav = () => {
   distinct_categories=[...new Set(distinct_categories)]
   // console.log(distinct_categories)
 
-const color={
-  "men's clothing":'blue',
-  "women's clothing":'green',
-  electronics:'red',
-  jewelery:'yellow'
-}
+  const getColorClass = (category) => {
+    const colorMap = {
+      "men's clothing": 'bg-blue-100',
+      "women's clothing": 'bg-green-100',
+      'electronics': 'bg-red-100',
+      'jewelery': 'bg-yellow-100'
+    }
+    return colorMap[category]
+  }
 
 
   return (
@@ -32,8 +35,8 @@ const color={
       <div className=" w-[80%]">
         {distinct_categories.map((category,index)=>{
           return(
-            <Link key={index} to={`?category=${category}`} className={`mb-3  flex items-center gap-2 hover:text-blue-500`}>
-            <span className={`rounded-full  w-[15px] h-[15px] ${"bg-"+color[category]+"-100"}`}></span>
+            <Link key={index} to={`/?category=${category}`} className={`mb-3  flex items-center gap-2 hover:text-blue-500`}>
+            <span className={`rounded-full  w-[15px] h-[15px] ${getColorClass(category)}`}></span>
             {category.charAt(0).toUpperCase()+category.slice(1)}
           </Link>)
         })}
