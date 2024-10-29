@@ -7,8 +7,9 @@ const Nav = () => {
 
   const {products}=useContext(productContext) 
 
-  let distinct_categories=products.map(product=>product.category)
-  distinct_categories=[...new Set(distinct_categories)]
+  const distinct_categories = products ? [...new Set(
+    products.map(product=>product.category)
+  )] : [];
   // console.log(distinct_categories)
 
   const getColorClass = (category) => {
