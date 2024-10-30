@@ -109,6 +109,7 @@ In JavaScript, when you're not sure if something might cause an error (like fetc
 
 -Catch: If you miss catching the ball (because maybe it was too fast or you weren't ready), your friend says, "It's okay, try again next time."
 
+
 In JavaScript, when something inside the try block causes an error, JavaScript "catches" that error and runs the code inside the catch block. This helps you handle errors gracefully without crashing your whole program.
 
 -So, try is like attempting to catch something without knowing if you'll succeed, and catch is what you do if you miss and need to handle the situation. In JavaScript, try and catch are used together to manage and respond to potential errors in your code.
