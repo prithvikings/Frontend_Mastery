@@ -20,6 +20,7 @@ Agar hum inme se kisi ka v use kar rahe hai to woh code hai Asyncchronous other 
 -setinterval
 -promises
 -axios
+-fetch
 -xmhttprequest
 
 #Async js hai Kya?
