@@ -1,0 +1,26 @@
+Redux toolkit:-
+Humare data ko centralised karke har component tak pahuchane ka ek approach hai.
+Redux ek individual entity hai jissey hum log javascript ke kisi v library ke sath use kar skte hai it can be react js or angular js or vanila js aur grx ke sath v rehta hai.
+
+
+--it is similar to context api but difference ye hai ki jab application bahut large ho to hum log iska use karte hai.like context v iske jagah use ho skta hai waise jagah pe but that will not as efficient as this.
+
+--useselector() Hook is used for sending data from centralised store data to any component application. any component can only read it not be able to change it.
+
+--Action we use action to change any thing. iske help se kisi v reducer ke chote se part ko change kar skte hai.
+  they are like normal function that we can call.
+
+--dispatch is used to call action
+
+--reducer isme chote chote data hote hai
+
+The cycle is like this:-
+
+Reducer to store to application component to action to reducer
+
+--reducer se store mein data store hua 
+--store se application component ko access mila
+--application component mein koi change action se hoga
+--action mein jo change kiya gaya hai woh reducer mein ayega 
+--reducer will change and store in store.
+
