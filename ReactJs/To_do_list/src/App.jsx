@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const App = () => {
   const [tasks, setTasks] = useState("");
@@ -10,6 +11,7 @@ const App = () => {
       e.preventDefault();
       setTaskList([...taskList, { tasks, description }]);
       // console.log(tasks, description);
+      toast.success("Task Added Successfully");
       setTasks("");
       setDescription("");
     };
@@ -20,6 +22,7 @@ const App = () => {
     let copytask = [...taskList];
     copytask.splice(i, 1);
     setTaskList(copytask);
+    toast.error("Task Deleted Successfully");
   };
 
 
