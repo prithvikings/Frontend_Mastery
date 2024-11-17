@@ -24,6 +24,7 @@ const App = () => {
     setTaskList(copytask);
     toast.error("Task Deleted Successfully");
   };
+  
 
 
   let renderTask = <h2>No Task Available</h2>;
