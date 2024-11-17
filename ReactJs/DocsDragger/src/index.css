@@ -5,3 +5,8 @@
 *{
     font-family: gilroy;
 }
+
+::selection {
+    
+    color: #333;
+}
