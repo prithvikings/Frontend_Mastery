@@ -1,0 +1,58 @@
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: 16px;
+}
+input {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+img {
+  display: none;
+}
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: 16px;
+}
+input {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+img {
+  display: none;
+}
