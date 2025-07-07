@@ -387,7 +387,7 @@ this ki value baar baar badal sakti hai alag alag condition mein, saari conditio
 
 #1.global- window
 #2.function- window
-#3.method- object
+#3.method- object (method are basically function in object)
 #4.function inside method (es5)- window
 #5.function inside method (es6)- object
 #6.constructor function mein this ki value- new blank object
@@ -411,3 +411,13 @@ this ki value baar baar badal sakti hai alag alag condition mein, saari conditio
 // everything about props vs method
 // updating object props 
 // how to delete object prop
+// higher order function
+// constructor function
+// first class function 
+// new keyword
+// iife
+// prototypes
+// prototype inheritance
+// this call apply bind
+// pure and impure function
+// closures
