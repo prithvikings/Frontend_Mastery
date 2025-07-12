@@ -12,8 +12,18 @@ center.addEventListener('mousemove', (e)=> {
             ease: "power1.inOut"
         })
     }else{
-
+        let bluecolor=gsap.utils.mapRange(width/2,width,0,255,left);
+        gsap.to(center,{
+            backgroundColor: `rgb( 0, 0,${bluecolor})`,
+            ease: "power1.inOut"
+        })
     }
 });
 
 
+center.addEventListener('mouseleave', () => {
+    gsap.to(center, {
+        backgroundColor: 'white',
+        ease: "power1.inOut"
+    });
+});
