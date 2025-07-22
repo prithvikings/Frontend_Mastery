@@ -1,4 +1,5 @@
 import React from "react";
+import { IMAGE_CDN } from "../utils/constants";
 
 function ResturantCard(props) {
   const { resturant } = props;
@@ -8,7 +9,7 @@ function ResturantCard(props) {
     <div className="card w-64 h-80 rounded-lg p-4 flex flex-col items-start hover:cursor-pointer hover:scale-95 transition-transform duration-300">
       <img
         className="w-full h-48 object-cover rounded-lg"
-        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
+        src={`${IMAGE_CDN}/${cloudinaryImageId}`}
         alt={name}
       />
       <h1 className="text-xl text-gray-900 font-semibold">{name}</h1>
