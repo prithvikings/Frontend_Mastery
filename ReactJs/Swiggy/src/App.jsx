@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Footer from './components/Footer'
 function App() {
   return (
-    <div className='app w-full min-h-screen flex flex-col bg-[#ffffff]'>
+    <div className='app w-full min-h-screen flex flex-col bg-[#ffffff] font-gilroy'>
       <Navbar />
       <SearchBar />
       <Home />
