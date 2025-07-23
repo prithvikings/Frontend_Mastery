@@ -141,3 +141,7 @@ React Fiber introduces several key features:
 
 3. Improved error handling: React Fiber provides better error handling and debugging tools, making it easier to identify and fix issues.
 
+### What is diff algorithm? 
+
+
+##### Whenever state variable changes , React will re-render the component.

@@ -1,14 +1,46 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import ResturantCard from "./ResturantCard";
-import { data, resturantData } from "../utils/mockData";
+import { data} from "../utils/mockData";
+import { ShimmerPostList } from "react-shimmer-effects";
 function ResturantContainer() {
-  let [listofResturants, setListOfResturants] = useState(resturantData);
+  let [listofResturants, setListOfResturants] = useState([]);
+  let [searchText, setSearchText] = useState("");
 
-  return (
+  let filter=listofResturants.filter((resturant)=>{
+    return resturant.info.name.toLowerCase().includes(searchText.toLowerCase());
+  })
+  listofResturants=searchText.length===0?listofResturants:filter;
+
+
+   useEffect(()=>{
+    getdata();
+  },[])
+
+  let getdata=async()=>{
+    let data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+    let json=await data.json();
+    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    setListOfResturants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  }
+ 
+
+  return listofResturants.length === 0 ? (
+    <ShimmerPostList />
+  ) : (
+    
     <div className="resturant-container mx-auto my-4  w-full max-w-7xl p-4 ">
       {/* // Displaying the restaurant categories */}
-
+<div className="search-bar mt-4 w-full flex justify-center items-center">
+      <input 
+      value={searchText}
+      onChange={(e) => 
+        setSearchText(e.target.value)}
+      
+      type="text" placeholder="Whats in Your mind..." 
+      className='w-2/3 h-10 px-4 text-sm border-2 border-gray-400 rounded focus:outline-none focus:ring-2 focus:ring-orange-400 py-6'
+      />
+    </div>  
       <div className="flex flex-col items-end justify-center mb-4 border-b-2 border-gray-200 pb-4 w-full">
         <h1 className="text-sm font-medium hover:cursor-pointer ">View All</h1>
         <div className="flex items-center justify-between mb-4 h-48 px-16">
