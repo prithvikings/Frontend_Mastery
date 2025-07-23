@@ -1,20 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Shimmer() {
+function ShimmerCard() {
   return (
-    <div>
-        <div className="flex items-center justify-between mb-4 h-48 px-16">
-            {Array(10).fill("").map((_, index) => (
-                <div
-                    key={index} 
-                    className="h-full w-64 bg-gray-200 animate-pulse rounded-md shadow-md"
-                >
-                    <div className="h-32 w-full bg-gray-300 animate-pulse rounded-md"></div>
-                </div>
-            ))}
-        </div>
+    <div className="w-[48%] bg-gray-300 animate-pulse p-6 rounded-lg h-56 mb-4">
+      <div className="h-6 bg-gray-400 rounded w-1/2 mb-4"></div>
+      <div className="h-4 bg-gray-400 rounded w-full mb-2"></div>
+      <div className="h-4 bg-gray-400 rounded w-5/6 mb-2"></div>
+      <div className="h-4 bg-gray-400 rounded w-2/3"></div>
     </div>
-  )
+  );
 }
 
-export default Shimmer
+export default ShimmerCard;

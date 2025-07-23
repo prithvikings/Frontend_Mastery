@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 import ResturantCard from "./ResturantCard";
 import { data} from "../utils/mockData";
 import { ShimmerPostList } from "react-shimmer-effects";
+import { Link } from "react-router";
 function ResturantContainer() {
   let [listofResturants, setListOfResturants] = useState([]);
   let [searchText, setSearchText] = useState("");
@@ -20,7 +21,6 @@ function ResturantContainer() {
   let getdata=async()=>{
     let data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     let json=await data.json();
-    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     setListOfResturants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
  
@@ -81,7 +81,9 @@ function ResturantContainer() {
           <div className="flex flex-wrap gap-4 justify-start items-start">
             {listofResturants.map((resturant) => {
               return (
-                <ResturantCard key={resturant.info.id} resturant={resturant} />
+                <Link to={`/restaurant/${resturant.info.id}`} key={resturant.info.id}>
+                  <ResturantCard resturant={resturant} />
+                </Link>
               );
             })}
           </div>

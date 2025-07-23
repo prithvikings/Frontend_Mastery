@@ -1,5 +1,6 @@
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
+import { NavLink } from 'react-router';
 
 function Navbar() {
   const [btnReact, setBtnReact] = React.useState("Sign In");
@@ -16,22 +17,22 @@ function Navbar() {
 
         <div className='flex items-center gap-2'>
           <i className="ri-briefcase-line"></i>
-        <h3 className='font-normal text-md'>Swiggy Corporate</h3>
+        <NavLink to="/corporate" className='font-medium text-md'>Swiggy Corporate</NavLink>
         </div>
 
         <div className='flex items-center gap-2'>
           <i className="ri-search-line"></i>
-        <h3 className='font-normal text-md'>Search</h3>
+        <NavLink to="/" className='font-semibold text-md'>Home</NavLink>
         </div>
 
         <div className='flex items-center gap-2'>
           <i className="ri-discount-percent-line"></i>
-        <h3 className='font-normal text-md'>Offers</h3>
+        <NavLink to="/contact" className='font-medium text-md'>Contact</NavLink>
         </div>
 
         <div className='flex items-center gap-2'>
           <i className="ri-questionnaire-line"></i>
-        <h3 className='font-normal text-md'>Help</h3>
+        <NavLink to="/about" className='font-medium text-md'>About</NavLink>
         </div>
 <div className='flex items-center gap-4'>
           <button 
