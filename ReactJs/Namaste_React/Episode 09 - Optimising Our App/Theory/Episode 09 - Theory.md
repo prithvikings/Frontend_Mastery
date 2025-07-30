@@ -6,6 +6,7 @@
 
 ### Topics Taught
 
+- Singal responsibility principal
 - Custom Hooks
 - Modularity in Code
 - Modular Bundling

@@ -1,0 +1,30 @@
+What is Framer Motion?
+
+Framer motion is an open source animaition library specifically designed for react it allows devellopers to create animation and interaction with minimal code. Framer motion is built on foundation of the framer library and provides a declarative api for defining animations making it easy to create complex motion designs. it is widely used for:
+
+1. creating smooth fluid animations
+2. Enhancing user experience with interactive elements
+3. High performance
+
+
+Is Framer Motion Good?
+------------------------
+Framer motion is consider one of the best animation library for react due to its:
+
+1.Ease of User
+2.powerfull features
+3.community support
+
+When to choose framer motion:
+--------------------------------
+1. You are working primarily with react and want a library that integrated seamlessly with it.
+2. You need to quickly implement animation with simple and declarative API.
+3. Your project involves a lot of interactive animations, such as drag, hover and top gestures.
+
+When to choose GSAP:
+--------------------------------
+1. You need advanced animation capabilitie and highly customized animations.
+
+2. you Project is not limited to react or you are using multiple frameworks.
+
+3.You required the use of GSAP powerful plugins for tasks like scroll-based animations or complex SVG animations.

@@ -14,6 +14,7 @@ const useFetchMenu = (resId) => {
     const json = await data.json();
     setResInfo(json?.data?.cards?.[2]?.card?.card?.info);
     setLoading(false);
+ 
   };
 
   return [resInfo, loading];

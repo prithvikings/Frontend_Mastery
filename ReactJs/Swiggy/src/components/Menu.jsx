@@ -12,7 +12,6 @@ function Menu() {
   const [recommended, loadingRecommended] = useFetchRecommended(id);
 
   const { name, cuisines, costForTwoMessage } = info || {};
-
   if (loadingMenu || loadingRecommended) {
     return (
       <div className="p-8 w-full min-h-screen gap-4 flex flex-col items-center">
