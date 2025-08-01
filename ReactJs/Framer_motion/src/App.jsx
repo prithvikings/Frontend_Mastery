@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from "motion/react"
 import ButtonCompo from './components/ButtonCompo'
 import Card from './components/Card'
+import TextAnime from './components/TextAnime'
 
 function App() {
   return (
@@ -16,9 +17,14 @@ function App() {
     // >
     //   {/* <ButtonCompo/> */}
     // </div>
-    <div className='min-h-screen flex items-center justify-center bg-zinc-50 w-full mx-auto p-4'>
-      <Card />
+
+
+    <div className='min-h-screen flex items-center justify-center bg-zinc-800 w-full mx-auto p-4'>
+   {/* <Card /> */}
+    <TextAnime />
     </div>
+
+    
   )
 }
 
